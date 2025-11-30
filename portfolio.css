@@ -1,0 +1,42 @@
+.portfolio-page .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 1rem;
+    background: rgba(8, 4, 24, 0.92);
+    border-radius: 24px;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.project-content h2 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.project-content p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-link {
+    font-size: 0.9rem;
+    color: #8fd8ff;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}

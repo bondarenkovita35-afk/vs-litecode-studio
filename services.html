@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tjänster – VS LiteCode Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body class="dark-theme">
+    <div class="background-glow"></div>
+
+    <header class="site-header">
+        <div class="logo-area">
+            <div class="logo-glow">
+                <img src="assets/logo/logo.png" alt="VS LiteCode Studio logotyp" class="logo-img" />
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <span class="studio-name">VS LITECODE STUDIO</span>
+        </div>
+
+        <nav class="main-nav">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Öppna meny">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
+                <li><a href="services.html" class="active" data-i18n="nav.services">Tjänster</a></li>
+                <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+            </ul>
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Byt tema">🌙</button>
+                <button id="lang-toggle" class="icon-btn" aria-label="Byt språk">SV</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main services-page">
+        <h1 class="page-title" data-i18n="services.title">Professionella tjänster</h1>
+        <p class="page-intro" data-i18n="services.intro">
+            Här kan du se vad jag erbjuder. Under varje tjänst finns plats för en länk med exempel eller mallar.
+        </p>
+
+        <section class="services-grid">
+
+            <!-- 1. Online-CV -->
+            <article class="service-card">
+                <h2 data-i18n="services.cv.title">1. Online-CV (HTML + CSS + ev. JS)</h2>
+                <p data-i18n="services.cv.desc">
+                    Personligt online-CV med din bild, sammanfattning, erfarenhet, utbildning, kontakt och länkar.
+                    Passar dig som söker jobb eller vill ha en enkel professionell sida.
+                </p>
+                <ul>
+                    <li data-i18n="services.cv.item1">Modern, responsiv layout</li>
+                    <li data-i18n="services.cv.item2">Lätt att uppdatera senare</li>
+                    <li data-i18n="services.cv.item3">Publicering på GitHub Pages ingår</li>
+                </ul>
+                <p class="price" data-i18n="services.cv.price">Pris: ca 500–900 kr</p>
+                <p class="example-link-label" data-i18n="services.example">
+                    Exempel / mall:
+                    <span class="placeholder">[länk till CV-exempel]</span>
+                </p>
+            </article>
+
+            <!-- 2. Digitalt visitkort -->
+            <article class="service-card">
+                <h2 data-i18n="services.card.title">2. Digitalt visitkort + QR-kod</h2>
+                <p data-i18n="services.card.desc">
+                    En liten webbplats med bild, kort presentation, kontaktuppgifter och länkar. Perfekt att koppla till
+                    QR-kod på tryckt visitkort, LinkedIn eller Instagram.
+                </p>
+                <ul>
+                    <li data-i18n="services.card.item1">Mobil-först design</li>
+                    <li data-i18n="services.card.item2">QR-kod som leder till sidan</li>
+                    <li data-i18n="services.card.item3">Anpassad efter din stil och färger</li>
+                </ul>
+                <p class="price" data-i18n="services.card.price">Pris: ca 600–900 kr</p>
+                <p class="example-link-label" data-i18n="services.example">
+                    Exempel / mall:
+                    <span class="placeholder">[länk till visitkorts-demo]</span>
+                </p>
+            </article>
+
+            <!-- 3. Enkel hemsida -->
+            <article class="service-card">
+                <h2 data-i18n="services.simple.title">3. Enkel hemsida (1–3 sektioner)</h2>
+                <p data-i18n="services.simple.desc">
+                    För coacher, lärare, frisörer eller andra småföretag som behöver en tydlig hemsida med startsida,
+                    kort info om dig, tjänster och kontakt.
+                </p>
+                <ul>
+                    <li data-i18n="services.simple.item1">Design i dina färger</li>
+                    <li data-i18n="services.simple.item2">Responsiv för mobil och surfplatta</li>
+                    <li data-i18n="services.simple.item3">Kontaktformulär eller länk till mejl</li>
+                </ul>
+                <p class="price" data-i18n="services.simple.price">Pris: ca 1 000–2 000 kr</p>
+                <p class="example-link-label" data-i18n="services.example">
+                    Exempel / mall:
+                    <span class="placeholder">[länk till enkel hemsida]</span>
+                </p>
+            </article>
+
+            <!-- 4. Portfolio / projectsida -->
+            <article class="service-card">
+                <h2 data-i18n="services.portfolio.title">4. Portfolio / projectsida</h2>
+                <p data-i18n="services.portfolio.desc">
+                    En stilren sida där du kan visa upp dina arbeten, bilder och projekt. Perfekt för utvecklare,
+                    designers, fotografer eller kreativa yrken.
+                </p>
+                <ul>
+                    <li data-i18n="services.portfolio.item1">Projektkort med bild och beskrivning</li>
+                    <li data-i18n="services.portfolio.item2">Länkar till GitHub, LinkedIn eller Fiverr</li>
+                    <li data-i18n="services.portfolio.item3">Enkel struktur där du kan lägga till fler projekt</li>
+                </ul>
+                <p class="price" data-i18n="services.portfolio.price">Pris: ca 1 500–2 500 kr</p>
+                <p class="example-link-label" data-i18n="services.example">
+                    Exempel / mall:
+                    <span class="placeholder">[länk till portfoliosida]</span>
+                </p>
+            </article>
+
+            <!-- 5. Magiskt fotoalbum -->
+            <article class="service-card">
+                <h2 data-i18n="services.album.title">5. Magiskt fotoalbum (familje- eller babyalbum)</h2>
+                <p data-i18n="services.album.desc">
+                    Interaktivt online-album med animationer, mjuka övergångar, glitter- och stjärneffekter. Perfekt för
+                    familjefoton eller speciella minnen.
+                </p>
+                <ul>
+                    <li data-i18n="services.album.item1">Plats för ca 20–50 bilder</li>
+                    <li data-i18n="services.album.item2">Responsiv design</li>
+                    <li data-i18n="services.album.item3">Delbar länk till familj och vänner</li>
+                </ul>
+                <p class="price" data-i18n="services.album.price">Pris: ca 1 000–2 000 kr</p>
+                <p class="example-link-label" data-i18n="services.example">
+                    Exempel / mall:
+                    <span class="placeholder">[länk till fotoalbum]</span>
+                </p>
+            </article>
+
+            <!-- 6. Landningssida -->
+            <article class="service-card">
+                <h2 data-i18n="services.landing.title">6. Landningssida för kampanj eller företag</h2>
+                <p data-i18n="services.landing.desc">
+                    En professionell landningssida med hero-sektion, tydliga knappar och modern typografi. Bra för
+                    kampanjer, event eller annonser.
+                </p>
+                <ul>
+                    <li data-i18n="services.landing.item1">Tydlig call-to-action</li>
+                    <li data-i18n="services.landing.item2">Optimerad för mobiltrafik</li>
+                    <li data-i18n="services.landing.item3">Animerade detaljer och neon-känsla</li>
+                </ul>
+                <p class="price" data-i18n="services.landing.price">Pris: ca 3 000–6 000 kr</p>
+                <p class="example-link-label" data-i18n="services.example">
+                    Exempel / mall:
+                    <span class="placeholder">[länk till landningssida]</span>
+                </p>
+            </article>
+
+            <!-- 7. Anpassning / fix -->
+            <article class="service-card">
+                <h2 data-i18n="services.fix.title">7. Anpassning & fix av befintlig hemsida</h2>
+                <p data-i18n="services.fix.desc">
+                    Jag kan hjälpa dig att rätta små fel, uppdatera designen eller flytta din sida till GitHub Pages.
+                </p>
+                <ul>
+                    <li data-i18n="services.fix.item1">Design-förbättringar</li>
+                    <li data-i18n="services.fix.item2">Responsivitet / mobilanpassning</li>
+                    <li data-i18n="services.fix.item3">Felsökning av HTML/CSS</li>
+                </ul>
+                <p class="price" data-i18n="services.fix.price">Pris: ca 200–300 kr / timme</p>
+                <p class="example-link-label" data-i18n="services.example">
+                    Exempel:
+                    <span class="placeholder">[länk till förbättrad sida]</span>
+                </p>
+            </article>
+
+            <!-- 8. Komplett paket -->
+            <article class="service-card">
+                <h2 data-i18n="services.package.title">8. Komplett paket (CV + Portfolio + Visitkort)</h2>
+                <p data-i18n="services.package.desc">
+                    Tre produkter i samma stil: online-CV, portfolio-sida och digitalt visitkort med QR-kod. Perfekt om
+                    du vill starta din personliga brand.
+                </p>
+                <ul>
+                    <li data-i18n="services.package.item1">Enhetlig design</li>
+                    <li data-i18n="services.package.item2">Snabb leverans</li>
+                    <li data-i18n="services.package.item3">Bra paketpris</li>
+                </ul>
+                <p class="price" data-i18n="services.package.price">Pris: ca 1 000–2 000 kr</p>
+                <p class="example-link-label" data-i18n="services.example">
+                    Exempel:
+                    <span class="placeholder">[länk till paket-exempel]</span>
+                </p>
+            </article>
+        </section>
+
+        <section class="cta-section">
+            <p data-i18n="services.contactCta">
+                Vill du boka en tjänst eller har frågor? Skicka ett meddelande via kontaktsidan så svarar jag via mejl.
+            </p>
+            <a href="contact.html" class="btn btn-primary" data-i18n="services.btnContact">
+                Gå till kontakt
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2025 VS LiteCode Studio · Vitalia Sivakova · Stockholm, Sverige</span>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

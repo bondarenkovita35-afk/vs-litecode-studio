@@ -1,0 +1,77 @@
+/* ----- TABLET ----- */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-page {
+        grid-template-columns: 1fr;
+    }
+
+    .services-page .services-grid,
+    .portfolio-page .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----- MOBILE ----- */
+@media (max-width: 700px) {
+    .site-header {
+        padding-inline: 1rem;
+    }
+
+    .studio-name {
+        display: none; /* чтобы не занимало место на маленьких экранах */
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 1rem;
+        top: 3.1rem;
+        flex-direction: column;
+        background: rgba(8, 4, 24, 0.97);
+        padding: 0.7rem;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hero-wrapper {
+        padding-inline: 1rem;
+    }
+
+    .hero {
+        padding: 1.7rem 1.2rem;
+        border-radius: 24px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .page-main {
+        padding-inline: 1rem;
+    }
+
+    .service-card,
+    .project-card {
+        padding: 1.1rem 1.1rem;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 1.3rem;
+    }
+}

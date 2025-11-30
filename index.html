@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VS LiteCode Studio – Webbutveckling</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body class="dark-theme">
+    <div class="background-glow"></div>
+    <header class="site-header">
+        <div class="logo-area glow-logo">
+            <img src="assets/logo/logo.png" alt="VS LiteCode Studio logotyp" class="logo-img" />
+            <span class="studio-name">VS LITECODE STUDIO</span>
+        </div>
+
+        <nav class="main-nav">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Öppna meny">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active" data-i18n="nav.home">Hem</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Tjänster</a></li>
+                <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Byt tema">🌙</button>
+                <button id="lang-toggle" class="icon-btn" aria-label="Byt språk">SV</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero-wrapper">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="hero-tag" data-i18n="hero.tag">
+                    Webbutvecklare · HTML · CSS · JS · .NET · Stockholm, Sverige
+                </p>
+
+                <h1 class="hero-title" data-i18n="hero.title">
+                    Välkommen till VS LiteCode Studio!
+                </h1>
+
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Jag skapar moderna, responsiva och visuellt starka webbplatser som är både snygga och enkla att
+                    använda.
+                    Behöver du en professionell webbnärvaro? online CV, portfolio, fotoalbum, företagshemsida eller ett
+                    digitalt visitkort med QR-kod? Du har kommit rätt!
+                    Mitt fokus är att ge privatpersoner och småföretag en stark digital närvaro med design som känns
+                    modern, levande och lite magiskt skräddarsydda webbplatser som speglar deras unika identitet och
+                    mål.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary" data-i18n="hero.btnServices">
+                        Se mina tjänster
+                    </a>
+                    <a href="portfolio.html" class="btn btn-ghost" data-i18n="hero.btnProjects">
+                        Visa projekt
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-photo-frame">
+                <div class="neon-frame">
+                    <img src="assets/images/vita-profile.jpg" alt="Vitalia Sivakova" class="hero-photo" />
+                </div>
+                <div class="hero-caption">
+                    <h2 class="hero-name">Vitalia Sivakova</h2>
+                    <p class="hero-role" data-i18n="hero.role">
+                        Webbutvecklare .NET · Grundare av VS LiteCode Studio
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2025 VS LiteCode Studio · Vitalia Sivakova · Stockholm, Sverige</span>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

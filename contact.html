@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt – VS LiteCode Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body class="dark-theme">
+    <div class="background-glow"></div>
+
+    <header class="site-header">
+        <div class="logo-area glow-logo">
+            <img src="assets/logo/logo.png" alt="VS LiteCode Studio logotyp" class="logo-img" />
+            <span class="studio-name">VS LITECODE STUDIO</span>
+        </div>
+
+        <nav class="main-nav">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Öppna meny">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Tjänster</a></li>
+                <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="contact.html" class="active" data-i18n="nav.contact">Kontakt</a></li>
+            </ul>
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Byt tema">🌙</button>
+                <button id="lang-toggle" class="icon-btn" aria-label="Byt språk">SV</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main contact-page">
+        <section class="contact-intro">
+            <h1 class="page-title" data-i18n="contact.title">Skicka meddelande</h1>
+            <p data-i18n="contact.text">
+                Jag föredrar att ha kontakt via mejl eller meddelanden. Fyll i formuläret så återkommer jag så snart jag
+                kan.
+            </p>
+
+            <div class="contact-details">
+                <p><strong>E-post:</strong> <a href="mailto:bondarenkovita35@gmail.com">bondarenkovita35@gmail.com</a>
+                </p>
+                <p><strong>Telefon:</strong> 072-943 14 27</p>
+                <p><strong>Plats:</strong> Stockholm, Sverige</p>
+                <p>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/vitaliiа-sivakova-865471187/" target="_blank">Profil</a>
+                </p>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/bondarenkovita35-afk" target="_blank">bondarenkovita35-afk</a>
+                </p>
+                <p>
+                    <strong>Fiverr:</strong>
+                    <a href="https://www.fiverr.com/vitafullstack" target="_blank">@vitafullstack</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <form id="contact-form" class="contact-form">
+                <label for="name" data-i18n="contact.name">Namn</label>
+                <input type="text" id="name" name="name" required placeholder="Ditt namn" />
+
+                <label for="email" data-i18n="contact.email">E-post</label>
+                <input type="email" id="email" name="email" required placeholder="din@mail.se" />
+
+                <label for="message" data-i18n="contact.message">Meddelande</label>
+                <textarea id="message" name="message" rows="5" required
+                    placeholder="Beskriv kort vad du behöver hjälp med"></textarea>
+
+                <button type="submit" class="btn btn-primary" data-i18n="contact.btnSend">
+                    Skicka meddelande
+                </button>
+
+                <p id="contact-status" class="contact-status"></p>
+                <p class="contact-note" data-i18n="contact.note">
+                    (Demo – meddelandet skickas inte på riktigt, men på en riktig server kan detta kopplas till mejl.)
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2025 VS LiteCode Studio · Vitalia Sivakova · Stockholm, Sverige</span>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
