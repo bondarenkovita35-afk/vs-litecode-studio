@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bondarenkovita35-afk.github.io/vs-litecode-studio/sitemap.xml
