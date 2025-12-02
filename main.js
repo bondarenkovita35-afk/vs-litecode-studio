@@ -97,7 +97,7 @@ const translations = {
 
         "portfolio.title": "Portfolio",
         "portfolio.intro": "Här kan du se några av mina senaste projekt. Klicka på korten för att öppna live-versioner.",
-        "portfolio.cv.title": "Online-CV – Vitalia",
+        "portfolio.cv.title": "Online-CV",
         "portfolio.cv.desc": "Webbaserat CV med personlig text, sektioner för erfarenhet och utbildning, samt länk till GitHub och LinkedIn.",
         "portfolio.studio.title": "VS LiteCode Studio – portfoliosida",
         "portfolio.studio.desc": "En sida som presenterar tjänster, projekt och kontakt – byggd för att visa upp min webbutveckling.",
@@ -192,7 +192,7 @@ const translations = {
 
         "portfolio.title": "Portfolio",
         "portfolio.intro": "Here are some of my latest projects. Click the cards to open the live versions.",
-        "portfolio.cv.title": "Online CV – Vitalia",
+        "portfolio.cv.title": "Online CV",
         "portfolio.cv.desc": "Web based CV with personal text, experience, education and links.",
         "portfolio.studio.title": "VS LiteCode Studio – portfolio site",
         "portfolio.studio.desc": "Site that shows my services, projects and contact.",
