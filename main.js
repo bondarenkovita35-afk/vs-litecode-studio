@@ -28,7 +28,7 @@ const translations = {
 
         "hero.tag": "Webbutvecklare · HTML · CSS · JS · .NET · Stockholm, Sverige",
         "hero.title": "Välkommen till VS LiteCode Studio!",
-        "hero.subtitle": "Jag skapar moderna, responsiva och visuellt starka webbplatser som är både snygga och enkla att använda. Behöver du en professionell webbnärvaro? online CV, portfolio, fotoalbum, företagshemsida eller ett digitalt visitkort med QR-kod? Du har kommit rätt! Mitt fokus är att ge privatpersoner och småföretag en stark digital närvaro med design som känns modern, levande och lite magiskt skräddarsydda webbplatser som speglar deras unika identitet och mål.",
+        "hero.subtitle": "Jag skapar moderna, responsiva och visuellt starka webbplatser som är både snygga och enkla att använda. Behöver du en professionell webbnärvaro? online CV, portfolio, fotoalbum, företagshemsida eller ett digitalt visitkort med QR-kod? Du har kommit rätt! Mitt fokus är att ge privatpersoner och småföretag en stark digital närvaro med design som känns modern, levande och lite magisk – skräddarsydda webbplatser som speglar deras unika identitet och mål.",
         "hero.btnServices": "Se mina tjänster",
         "hero.btnProjects": "Visa projekt",
         "hero.role": "Webbutvecklare .NET · Grundare av VS LiteCode Studio",
@@ -112,7 +112,23 @@ const translations = {
         "contact.email": "E-post",
         "contact.message": "Meddelande",
         "contact.btnSend": "Skicka meddelande",
-        "contact.note": "(Demo – meddelandet skickas inte på riktigt, men på en riktig server kan detta kopplas till mejl.)"
+        "contact.note": "(Demo – meddelandet skickas inte på riktigt, men på en riktig server kan detta kopplas till mejl.)",
+
+        "albumFamily.title": "Magiskt familje- / barnfotoalbum",
+        "albumFamily.lead": "Föreställ dig att dina favoritbilder inte bara ligger i mobilen, utan får liv i ett eget magiskt rum – mjuka animationer, neonljus, glitter och stjärnor. Ett sådant onlinealbum kan öppnas från vilken enhet som helst och delas med familj och vänner.",
+        "albumFamily.p1": "Albumet passar för graviditet, barnets första år, familjeresor eller ett viktigt tillfälle. Jag hjälper dig att välja ut bilderna, lägga dem i en fin ordning och skapa en helhetlig stil så att varje sida känns speciell.",
+        "albumFamily.p2": "Det här är mer än bara ett galleri. Det är en liten magisk berättelse om din familj som du kan visa för mormor i ett annat land eller spara som en digital skatt i många år.",
+        
+        "albumFamily.forYouTitle": "Vad jag kan göra för dig",
+        "albumFamily.forYou1": "Välja färger och bakgrund som passar din familjs stil.",
+        "albumFamily.forYou2": "Lägga till texter, viktiga datum och korta berättelser till bilderna.",
+        "albumFamily.forYou3": "Skapa egna block för varje barn eller varje händelse.",
+        "albumFamily.forYou4": "Göra albumet anpassat för bara onlinevisning eller med möjlighet till utskrift.",
+        "albumFamily.examplesTitle": "Exempel och mallar",
+        "albumFamily.examplesIntro": "Nedan ser du demoalbum som jag redan har skapat. De visar stil, animationer och struktur.",
+        "albumFamily.examplePregnancy": "🌸 Graviditetsalbum – ett mjukt album med lugna övergångar och fokus på väntan på bebisen.",
+        "albumFamily.exampleGirl": "⭐ Fotoalbum för flicka – en färgstark, sagolik stil med glitter och stjärnor.",
+        "albumFamily.cta": "Om du gillar det här formatet kan du bara skriva till mig via kontaktformuläret och berätta vilket album som passar dig bäst: graviditet, barnets första år, ett familjeår i bilder och så vidare.",
     },
 
     en: {
@@ -207,108 +223,141 @@ const translations = {
         "contact.email": "Email",
         "contact.message": "Message",
         "contact.btnSend": "Send message",
-        "contact.note": "(Demo – the message is not sent for real here, but on a real server this can be connected to email.)"
+        "contact.note": "(Demo – the message is not sent for real here, but on a real server this can be connected to email.)",
+
+        "albumFamily.title": "Magic family / kids photo album",
+        "albumFamily.lead": "Imagine your favourite photos not just lying in your phone, but coming to life in a separate magical space – soft animations, neon glow, glitter and stars. This online album can be opened from any device and shared with family and friends.",
+        "albumFamily.p1": "The album is perfect for pregnancy, your child’s first years, family trips or any special event. I will help you choose the right photos, place them nicely and create one consistent style so that every page feels special.",
+        "albumFamily.p2": "It’s more than just a gallery. It’s a small magical story about your family that you can show to a grandma in another country or keep as a digital treasure for many years.",
+        
+        "albumFamily.forYouTitle": "What I can do for you",
+        "albumFamily.forYou1": "Match colours and background to your family’s style.",
+        "albumFamily.forYou2": "Add text, important dates and short stories to the photos.",
+        "albumFamily.forYou3": "Create separate sections for each child or each event.",
+        "albumFamily.forYou4": "Prepare the album either for online viewing only or with the option to print.",
+        "albumFamily.examplesTitle": "Examples and templates",
+        "albumFamily.examplesIntro": "Below you can see demo albums I’ve already created. They show the style, animations and structure.",
+        "albumFamily.examplePregnancy": "🌸 Pregnancy album – a gentle album with smooth transitions and a focus on expecting the baby.",
+        "albumFamily.exampleGirl": "⭐ Girls’ album – a bright, fairy-tale style with glitter and stars.",
+        "albumFamily.cta": "If you like this format, just send me a message via the contact form and tell me which album fits you best: pregnancy, baby’s first year, a family year in photos, etc.",
     },
 
-ru: {
-    "nav.home": "Главная",
-    "nav.services": "Услуги",
-    "nav.portfolio": "Портфолио",
-    "nav.contact": "Контакты",
+    ru: {
+        "nav.home": "Главная",
+        "nav.services": "Услуги",
+        "nav.portfolio": "Портфолио",
+        "nav.contact": "Контакты",
 
-    "hero.tag": "Веб-разработчик · HTML · CSS · JS · .NET · Стокгольм, Швеция",
-    "hero.title": "Добро пожаловать в VS LiteCode Studio!",
-    "hero.subtitle": "Я создаю современные, адаптивные и визуально яркие веб-сайты, которые выглядят стильно и остаются простыми в использовании. Нужна профессиональная онлайн-презентация? онлайн-резюме, портфолио, фотоальбом, сайт для бизнеса или цифровая визитка с QR-кодом? Вы по адресу! Моя цель — помочь частным клиентам и малым компаниям создать сильное цифровое присутствие, с дизайном, который ощущается современным, живым и немного волшебным, отражая их индивидуальность и цели.",
-    "hero.btnServices": "Мои услуги",
-    "hero.btnProjects": "Проекты",
-    "hero.role": "Веб-разработчик .NET · Основатель VS LiteCode Studio",
+        "hero.tag": "Веб-разработчик · HTML · CSS · JS · .NET · Стокгольм, Швеция",
+        "hero.title": "Добро пожаловать в VS LiteCode Studio!",
+        "hero.subtitle": "Я создаю современные, адаптивные и визуально яркие веб-сайты, которые выглядят стильно и остаются простыми в использовании. Нужна профессиональная онлайн-презентация? онлайн-резюме, портфолио, фотоальбом, сайт для бизнеса или цифровая визитка с QR-кодом? Вы по адресу! Моя цель — помочь частным клиентам и малым компаниям создать сильное цифровое присутствие с дизайном, который ощущается современным, живым и немного волшебным, отражая их индивидуальность и цели.",
+        "hero.btnServices": "Мои услуги",
+        "hero.btnProjects": "Проекты",
+        "hero.role": "Веб-разработчик .NET · Основатель VS LiteCode Studio",
 
-    "services.title": "Профессиональные услуги",
-    "services.intro": "Здесь вы можете увидеть, что я предлагаю. Под каждой услугой есть место для ссылки на пример или шаблон.",
-    "services.example": "Пример / шаблон:",
-    "services.contactCta": "Хотите заказать услугу или задать вопрос? Напишите сообщение через контактную форму, и я отвечу по email.",
-    "services.btnContact": "Перейти в контакты",
+        "services.title": "Профессиональные услуги",
+        "services.intro": "Здесь вы можете увидеть, что я предлагаю. Под каждой услугой есть место для ссылки на пример или шаблон.",
+        "services.example": "Пример / шаблон:",
+        "services.contactCta": "Хотите заказать услугу или задать вопрос? Напишите сообщение через контактную форму, и я отвечу по email.",
+        "services.btnContact": "Перейти в контакты",
 
-    "services.cv.title": "1. Онлайн-резюме (HTML + CSS + возможно JS)",
-    "services.cv.desc": "Персональное онлайн-резюме с фотографией, описанием, опытом, образованием, контактами и ссылками.",
-    "services.cv.item1": "Современный адаптивный дизайн",
-    "services.cv.item2": "Легко обновлять в будущем",
-    "services.cv.item3": "Публикация на GitHub Pages включена",
-    "services.cv.price": "Цена: примерно 500–900 кр",
+        "services.cv.title": "1. Онлайн-резюме (HTML + CSS + возможно JS)",
+        "services.cv.desc": "Персональное онлайн-резюме с фотографией, описанием, опытом, образованием, контактами и ссылками.",
+        "services.cv.item1": "Современный адаптивный дизайн",
+        "services.cv.item2": "Легко обновлять в будущем",
+        "services.cv.item3": "Публикация на GitHub Pages включена",
+        "services.cv.price": "Цена: примерно 500–900 кр",
 
-    "services.card.title": "2. Цифровая визитка + QR-код",
-    "services.card.desc": "Мини-сайт с фотографией, кратким описанием, контактами и ссылками. Идеально подходит для QR-кода, LinkedIn или Instagram.",
-    "services.card.item1": "Мобильный дизайн",
-    "services.card.item2": "QR-код, ведущий на сайт",
-    "services.card.item3": "Стиль подбирается под ваши цвета",
-    "services.card.price": "Цена: примерно 600–900 кр",
+        "services.card.title": "2. Цифровая визитка + QR-код",
+        "services.card.desc": "Мини-сайт с фотографией, кратким описанием, контактами и ссылками. Идеально подходит для QR-кода, LinkedIn или Instagram.",
+        "services.card.item1": "Мобильный дизайн",
+        "services.card.item2": "QR-код, ведущий на сайт",
+        "services.card.item3": "Стиль подбирается под ваши цвета",
+        "services.card.price": "Цена: примерно 600–900 кр",
 
-    "services.simple.title": "3. Простой сайт (1–3 секции)",
-    "services.simple.desc": "Для коучей, преподавателей, мастеров и малого бизнеса, кому нужен понятный сайт.",
-    "services.simple.item1": "Дизайн в ваших цветах",
-    "services.simple.item2": "Адаптивный под телефон и планшет",
-    "services.simple.item3": "Контактная форма или ссылка на email",
-    "services.simple.price": "Цена: примерно 1 000–2 000 кр",
+        "services.simple.title": "3. Простой сайт (1–3 секции)",
+        "services.simple.desc": "Для коучей, преподавателей, мастеров и малого бизнеса, кому нужен понятный сайт.",
+        "services.simple.item1": "Дизайн в ваших цветах",
+        "services.simple.item2": "Адаптивный под телефон и планшет",
+        "services.simple.item3": "Контактная форма или ссылка на email",
+        "services.simple.price": "Цена: примерно 1 000–2 000 кр",
 
-    "services.portfolio.title": "4. Портфолио / страница проектов",
-    "services.portfolio.desc": "Стильная страница для демонстрации ваших работ, изображений и проектов.",
-    "services.portfolio.item1": "Карточки проектов с фото и описанием",
-    "services.portfolio.item2": "Ссылки на GitHub, LinkedIn или Fiverr",
-    "services.portfolio.item3": "Лёгкое добавление новых проектов",
-    "services.portfolio.price": "Цена: примерно 1 500–2 500 кр",
+        "services.portfolio.title": "4. Портфолио / страница проектов",
+        "services.portfolio.desc": "Стильная страница для демонстрации ваших работ, изображений и проектов.",
+        "services.portfolio.item1": "Карточки проектов с фото и описанием",
+        "services.portfolio.item2": "Ссылки на GitHub, LinkedIn или Fiverr",
+        "services.portfolio.item3": "Лёгкое добавление новых проектов",
+        "services.portfolio.price": "Цена: примерно 1 500–2 500 кр",
 
-    "services.album.title": "5. Волшебный фотоальбом (семейный / детский)",
-    "services.album.desc": "Интерактивный онлайн-альбом с плавными анимациями, блёстками и эффектами звёзд.",
-    "services.album.item1": "Место для 20–50 фотографий",
-    "services.album.item2": "Адаптивный дизайн",
-    "services.album.item3": "Удобная ссылка для друзей и семьи",
-    "services.album.price": "Цена: примерно 1 000–2 000 кр",
+        "services.album.title": "5. Волшебный фотоальбом (семейный / детский)",
+        "services.album.desc": "Интерактивный онлайн-альбом с плавными анимациями, блёстками и эффектами звёзд.",
+        "services.album.item1": "Место для 20–50 фотографий",
+        "services.album.item2": "Адаптивный дизайн",
+        "services.album.item3": "Удобная ссылка для друзей и семьи",
+        "services.album.price": "Цена: примерно 1 000–2 000 кр",
 
-    "services.landing.title": "6. Лендинг для кампании или компании",
-    "services.landing.desc": "Профессиональный лендинг с крупным героем, кнопками и современной типографикой.",
-    "services.landing.item1": "Чёткий призыв к действию",
-    "services.landing.item2": "Оптимизация под мобильный трафик",
-    "services.landing.item3": "Анимированные детали и неоновый стиль",
-    "services.landing.price": "Цена: примерно 3 000–6 000 кр",
+        "services.landing.title": "6. Лендинг для кампании или компании",
+        "services.landing.desc": "Профессиональный лендинг с крупным героем, кнопками и современной типографикой.",
+        "services.landing.item1": "Чёткий призыв к действию",
+        "services.landing.item2": "Оптимизация под мобильный трафик",
+        "services.landing.item3": "Анимированные детали и неоновый стиль",
+        "services.landing.price": "Цена: примерно 3 000–6 000 кр",
 
-    "services.fix.title": "7. Исправление и настройка существующего сайта",
-    "services.fix.desc": "Помогаю исправить ошибки, обновить дизайн или перенести сайт на GitHub Pages.",
-    "services.fix.item1": "Улучшение дизайна",
-    "services.fix.item2": "Мобильная адаптация",
-    "services.fix.item3": "Поиск и исправление ошибок в HTML/CSS",
-    "services.fix.price": "Цена: примерно 200–300 кр / час",
+        "services.fix.title": "7. Исправление и настройка существующего сайта",
+        "services.fix.desc": "Помогаю исправить ошибки, обновить дизайн или перенести сайт на GitHub Pages.",
+        "services.fix.item1": "Улучшение дизайна",
+        "services.fix.item2": "Мобильная адаптация",
+        "services.fix.item3": "Поиск и исправление ошибок в HTML/CSS",
+        "services.fix.price": "Цена: примерно 200–300 кр / час",
 
-    "services.package.title": "8. Полный пакет (CV + Портфолио + Визитка)",
-    "services.package.desc": "Три продукта в одном стиле: онлайн-резюме, портфолио и цифровая визитка с QR-кодом.",
-    "services.package.item1": "Единый современный стиль",
-    "services.package.item2": "Быстрая работа",
-    "services.package.item3": "Выгодная цена",
-    "services.package.price": "Цена: примерно 1 000–2 000 кр",
+        "services.package.title": "8. Полный пакет (CV + Портфолио + Визитка)",
+        "services.package.desc": "Три продукта в одном стиле: онлайн-резюме, портфолио и цифровая визитка с QR-кодом.",
+        "services.package.item1": "Единый современный стиль",
+        "services.package.item2": "Быстрая работа",
+        "services.package.item3": "Выгодная цена",
+        "services.package.price": "Цена: примерно 1 000–2 000 кр",
 
-    "portfolio.title": "Портфолио",
-    "portfolio.intro": "Некоторые из моих последних проектов. Нажмите на карточку, чтобы открыть живую версию.",
-    "portfolio.cv.title": "Онлайн-резюме",
-    "portfolio.cv.desc": "Веб-резюме с личным описанием, опытом, образованием и ссылками.",
-    "portfolio.studio.title": "VS LiteCode Studio – портфолио",
-    "portfolio.studio.desc": "Сайт, показывающий мои услуги, проекты и контакт.",
-    "portfolio.box.title": "Сайт для тренера по боксу",
-    "portfolio.box.desc": "Клиентский проект с расписанием, ценами, галереей, формой и Google Maps.",
-    "portfolio.album.title": "Волшебный фотоальбом – семейный проект",
-    "portfolio.album.desc": "Современный адаптивный фотоальбом на HTML, CSS и JavaScript.",
+        "portfolio.title": "Портфолио",
+        "portfolio.intro": "Некоторые из моих последних проектов. Нажмите на карточку, чтобы открыть живую версию.",
+        "portfolio.cv.title": "Онлайн-резюме",
+        "portfolio.cv.desc": "Веб-резюме с личным описанием, опытом, образованием и ссылками.",
+        "portfolio.studio.title": "VS LiteCode Studio – портфолио",
+        "portfolio.studio.desc": "Сайт, показывающий мои услуги, проекты и контакт.",
+        "portfolio.box.title": "Сайт для тренера по боксу",
+        "portfolio.box.desc": "Клиентский проект с расписанием, ценами, галереей, формой и Google Maps.",
+        "portfolio.album.title": "Волшебный фотоальбом – семейный проект",
+        "portfolio.album.desc": "Современный адаптивный фотоальбом на HTML, CSS и JavaScript.",
 
-    "contact.title": "Отправить сообщение",
-    "contact.text": "Предпочитаю общаться через email. Заполните форму — и я отвечу как можно скорее.",
-    "contact.name": "Имя",
-    "contact.email": "Email",
-    "contact.message": "Сообщение",
-    "contact.btnSend": "Отправить",
-    "contact.note": "(Демо — сообщение не отправляется по-настоящему, но на реальном сервере это можно подключить к email.)"
-}
+        "contact.title": "Отправить сообщение",
+        "contact.text": "Предпочитаю общаться через email. Заполните форму — и я отвечу как можно скорее.",
+        "contact.name": "Имя",
+        "contact.email": "Email",
+        "contact.message": "Сообщение",
+        "contact.btnSend": "Отправить",
+        "contact.note": "(Демо — сообщение не отправляется по-настоящему, но на реальном сервере это можно подключить к email.)",
+
+        "albumFamily.title": "Волшебный семейный / детский фотоальбом",
+        "albumFamily.lead": "Представь, что любимые фотографии не просто лежат в телефоне, а оживают в отдельном волшебном пространстве: плавные анимации, мягкий неоновый свет, блёстки и звёзды. Такой онлайн-альбом можно открыть с любого устройства и подарить доступ родным и друзьям.",
+        "albumFamily.p1": "Альбом подойдёт для беременности, первых лет жизни ребёнка, семейных путешествий или важного события. Я помогу аккуратно отобрать фото, красиво их расположить и оформить всё в едином стиле, чтобы каждая страница вызывала улыбку.",
+        "albumFamily.p2": "Это больше, чем просто галерея. Это маленькая магическая история о твоей семье, которую можно показать бабушке в другой стране или сохранить как цифровое сокровище на годы вперёд.",
+        
+        "albumFamily.forYouTitle": "Что я могу сделать для тебя",
+        "albumFamily.forYou1": "Подобрать цвета и фон под стиль семьи.",
+        "albumFamily.forYou2": "Добавить текст, важные даты и короткие истории к фотографиям.",
+        "albumFamily.forYou3": "Оформить отдельные блоки для каждого ребёнка или события.",
+        "albumFamily.forYou4": "Настроить альбом только для онлайн-просмотра или с возможностью печати.",
+
+        "albumFamily.examplesTitle": "Примеры и шаблоны",
+        "albumFamily.examplesIntro": "Ниже — демо-альбомы, которые я уже создала. По ним можно понять стиль, анимации и структуру.",
+        "albumFamily.examplePregnancy": "🌸 Альбом беременности — нежный альбом с плавными переходами и акцентом на ожидание малыша.",
+        "albumFamily.exampleGirl": "⭐ Детский альбом для девочки — яркий, сказочный стиль с блёстками и звёздами.",
+        "albumFamily.cta": "Если тебе нравится такой формат, просто напиши мне через форму на странице контактов и укажи, какой альбом тебе ближе: беременность, первый год ребёнка, семейный обзор за год и т.п.",
+
+    }
 };
 
-
 function applyTranslations(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
         const key = el.getAttribute("data-i18n");
         const text = translations[lang]?.[key];
         if (text) el.textContent = text;
@@ -320,16 +369,15 @@ if (langToggle) {
     applyTranslations(currentLang);
 
     langToggle.addEventListener("click", () => {
-    const langs = ["sv", "en", "ru"];
-    let index = langs.indexOf(currentLang);
-    index = (index + 1) % langs.length;
-    currentLang = langs[index];
+        const langs = ["sv", "en", "ru"];
+        let index = langs.indexOf(currentLang);
+        index = (index + 1) % langs.length;
+        currentLang = langs[index];
 
-    localStorage.setItem("vs-lang", currentLang);
-    langToggle.textContent = currentLang.toUpperCase();
-    applyTranslations(currentLang);
-});
-
+        localStorage.setItem("vs-lang", currentLang);
+        langToggle.textContent = currentLang.toUpperCase();
+        applyTranslations(currentLang);
+    });
 } else {
     // если на странице нет кнопки, хотя бы переведём по сохранённому языку
     applyTranslations(currentLang);
@@ -339,6 +387,7 @@ if (langToggle) {
 const contactForm = document.getElementById("contact-form");
 if (contactForm) {
     const statusEl = document.getElementById("contact-status");
+
     contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const name = contactForm.name.value.trim();
@@ -347,18 +396,30 @@ if (contactForm) {
 
         if (!name || !email || !message) {
             if (statusEl) {
-                statusEl.textContent = currentLang === "sv"
-                    ? "Fyll i alla fält."
-                    : "Please fill in all fields.";
+                let errorMsg;
+                if (currentLang === "sv") {
+                    errorMsg = "Fyll i alla fält.";
+                } else if (currentLang === "ru") {
+                    errorMsg = "Пожалуйста, заполните все поля.";
+                } else {
+                    errorMsg = "Please fill in all fields.";
+                }
+                statusEl.textContent = errorMsg;
                 statusEl.className = "contact-status error";
             }
             return;
         }
 
         if (statusEl) {
-            statusEl.textContent = currentLang === "sv"
-                ? "Tack! Ditt meddelande är registrerat (demo). Jag återkommer via mejl."
-                : "Thank you! Your message is saved (demo). I will reply by email.";
+            let successMsg;
+            if (currentLang === "sv") {
+                successMsg = "Tack! Ditt meddelande är registrerat (demo). Jag återkommer via mejl.";
+            } else if (currentLang === "ru") {
+                successMsg = "Спасибо! Ваше сообщение сохранено (демо). Я отвечу по email.";
+            } else {
+                successMsg = "Thank you! Your message is saved (demo). I will reply by email.";
+            }
+            statusEl.textContent = successMsg;
             statusEl.className = "contact-status success";
         }
 
