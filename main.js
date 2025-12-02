@@ -208,8 +208,104 @@ const translations = {
         "contact.message": "Message",
         "contact.btnSend": "Send message",
         "contact.note": "(Demo – the message is not sent for real here, but on a real server this can be connected to email.)"
-    }
+    },
+
+ru: {
+    "nav.home": "Главная",
+    "nav.services": "Услуги",
+    "nav.portfolio": "Портфолио",
+    "nav.contact": "Контакты",
+
+    "hero.tag": "Веб-разработчик · HTML · CSS · JS · .NET · Стокгольм, Швеция",
+    "hero.title": "Добро пожаловать в VS LiteCode Studio!",
+    "hero.subtitle": "Я создаю современные, адаптивные и визуально яркие веб-сайты, которые выглядят стильно и остаются простыми в использовании. Нужна профессиональная онлайн-презентация? онлайн-резюме, портфолио, фотоальбом, сайт для бизнеса или цифровая визитка с QR-кодом? Вы по адресу! Моя цель — помочь частным клиентам и малым компаниям создать сильное цифровое присутствие, с дизайном, который ощущается современным, живым и немного волшебным, отражая их индивидуальность и цели.",
+    "hero.btnServices": "Мои услуги",
+    "hero.btnProjects": "Проекты",
+    "hero.role": "Веб-разработчик .NET · Основатель VS LiteCode Studio",
+
+    "services.title": "Профессиональные услуги",
+    "services.intro": "Здесь вы можете увидеть, что я предлагаю. Под каждой услугой есть место для ссылки на пример или шаблон.",
+    "services.example": "Пример / шаблон:",
+    "services.contactCta": "Хотите заказать услугу или задать вопрос? Напишите сообщение через контактную форму, и я отвечу по email.",
+    "services.btnContact": "Перейти в контакты",
+
+    "services.cv.title": "1. Онлайн-резюме (HTML + CSS + возможно JS)",
+    "services.cv.desc": "Персональное онлайн-резюме с фотографией, описанием, опытом, образованием, контактами и ссылками.",
+    "services.cv.item1": "Современный адаптивный дизайн",
+    "services.cv.item2": "Легко обновлять в будущем",
+    "services.cv.item3": "Публикация на GitHub Pages включена",
+    "services.cv.price": "Цена: примерно 500–900 кр",
+
+    "services.card.title": "2. Цифровая визитка + QR-код",
+    "services.card.desc": "Мини-сайт с фотографией, кратким описанием, контактами и ссылками. Идеально подходит для QR-кода, LinkedIn или Instagram.",
+    "services.card.item1": "Мобильный дизайн",
+    "services.card.item2": "QR-код, ведущий на сайт",
+    "services.card.item3": "Стиль подбирается под ваши цвета",
+    "services.card.price": "Цена: примерно 600–900 кр",
+
+    "services.simple.title": "3. Простой сайт (1–3 секции)",
+    "services.simple.desc": "Для коучей, преподавателей, мастеров и малого бизнеса, кому нужен понятный сайт.",
+    "services.simple.item1": "Дизайн в ваших цветах",
+    "services.simple.item2": "Адаптивный под телефон и планшет",
+    "services.simple.item3": "Контактная форма или ссылка на email",
+    "services.simple.price": "Цена: примерно 1 000–2 000 кр",
+
+    "services.portfolio.title": "4. Портфолио / страница проектов",
+    "services.portfolio.desc": "Стильная страница для демонстрации ваших работ, изображений и проектов.",
+    "services.portfolio.item1": "Карточки проектов с фото и описанием",
+    "services.portfolio.item2": "Ссылки на GitHub, LinkedIn или Fiverr",
+    "services.portfolio.item3": "Лёгкое добавление новых проектов",
+    "services.portfolio.price": "Цена: примерно 1 500–2 500 кр",
+
+    "services.album.title": "5. Волшебный фотоальбом (семейный / детский)",
+    "services.album.desc": "Интерактивный онлайн-альбом с плавными анимациями, блёстками и эффектами звёзд.",
+    "services.album.item1": "Место для 20–50 фотографий",
+    "services.album.item2": "Адаптивный дизайн",
+    "services.album.item3": "Удобная ссылка для друзей и семьи",
+    "services.album.price": "Цена: примерно 1 000–2 000 кр",
+
+    "services.landing.title": "6. Лендинг для кампании или компании",
+    "services.landing.desc": "Профессиональный лендинг с крупным героем, кнопками и современной типографикой.",
+    "services.landing.item1": "Чёткий призыв к действию",
+    "services.landing.item2": "Оптимизация под мобильный трафик",
+    "services.landing.item3": "Анимированные детали и неоновый стиль",
+    "services.landing.price": "Цена: примерно 3 000–6 000 кр",
+
+    "services.fix.title": "7. Исправление и настройка существующего сайта",
+    "services.fix.desc": "Помогаю исправить ошибки, обновить дизайн или перенести сайт на GitHub Pages.",
+    "services.fix.item1": "Улучшение дизайна",
+    "services.fix.item2": "Мобильная адаптация",
+    "services.fix.item3": "Поиск и исправление ошибок в HTML/CSS",
+    "services.fix.price": "Цена: примерно 200–300 кр / час",
+
+    "services.package.title": "8. Полный пакет (CV + Портфолио + Визитка)",
+    "services.package.desc": "Три продукта в одном стиле: онлайн-резюме, портфолио и цифровая визитка с QR-кодом.",
+    "services.package.item1": "Единый современный стиль",
+    "services.package.item2": "Быстрая работа",
+    "services.package.item3": "Выгодная цена",
+    "services.package.price": "Цена: примерно 1 000–2 000 кр",
+
+    "portfolio.title": "Портфолио",
+    "portfolio.intro": "Некоторые из моих последних проектов. Нажмите на карточку, чтобы открыть живую версию.",
+    "portfolio.cv.title": "Онлайн-резюме",
+    "portfolio.cv.desc": "Веб-резюме с личным описанием, опытом, образованием и ссылками.",
+    "portfolio.studio.title": "VS LiteCode Studio – портфолио",
+    "portfolio.studio.desc": "Сайт, показывающий мои услуги, проекты и контакт.",
+    "portfolio.box.title": "Сайт для тренера по боксу",
+    "portfolio.box.desc": "Клиентский проект с расписанием, ценами, галереей, формой и Google Maps.",
+    "portfolio.album.title": "Волшебный фотоальбом – семейный проект",
+    "portfolio.album.desc": "Современный адаптивный фотоальбом на HTML, CSS и JavaScript.",
+
+    "contact.title": "Отправить сообщение",
+    "contact.text": "Предпочитаю общаться через email. Заполните форму — и я отвечу как можно скорее.",
+    "contact.name": "Имя",
+    "contact.email": "Email",
+    "contact.message": "Сообщение",
+    "contact.btnSend": "Отправить",
+    "contact.note": "(Демо — сообщение не отправляется по-настоящему, но на реальном сервере это можно подключить к email.)"
+}
 };
+
 
 function applyTranslations(lang) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -224,11 +320,16 @@ if (langToggle) {
     applyTranslations(currentLang);
 
     langToggle.addEventListener("click", () => {
-        currentLang = currentLang === "sv" ? "en" : "sv";
-        localStorage.setItem("vs-lang", currentLang);
-        langToggle.textContent = currentLang.toUpperCase();
-        applyTranslations(currentLang);
-    });
+    const langs = ["sv", "en", "ru"];
+    let index = langs.indexOf(currentLang);
+    index = (index + 1) % langs.length;
+    currentLang = langs[index];
+
+    localStorage.setItem("vs-lang", currentLang);
+    langToggle.textContent = currentLang.toUpperCase();
+    applyTranslations(currentLang);
+});
+
 } else {
     // если на странице нет кнопки, хотя бы переведём по сохранённому языку
     applyTranslations(currentLang);
