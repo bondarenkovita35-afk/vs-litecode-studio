@@ -479,11 +479,11 @@ if (contactForm) {
         if (statusEl) {
             let successMsg;
             if (currentLang === "sv") {
-                successMsg = "Tack! Ditt meddelande är registrerat (demo). Jag återkommer via mejl.";
+                successMsg = "Tack! Ditt meddelande är registrerat. Jag återkommer via mejl.";
             } else if (currentLang === "ru") {
-                successMsg = "Спасибо! Ваше сообщение сохранено (демо). Я отвечу по email.";
+                successMsg = "Спасибо! Ваше сообщение сохранено. Я отвечу по email.";
             } else {
-                successMsg = "Thank you! Your message is saved (demo). I will reply by email.";
+                successMsg = "Thank you! Your message is saved. I will reply by email.";
             }
             statusEl.textContent = successMsg;
             statusEl.className = "contact-status success";
