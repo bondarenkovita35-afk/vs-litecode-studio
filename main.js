@@ -132,6 +132,8 @@ const translations = {
         "albumFamily.examplePregnancy": "🌸 Graviditetsalbum – ett mjukt album med lugna övergångar och fokus på väntan på bebisen.",
         "albumFamily.exampleGirl": "⭐ Fotoalbum för flicka – en färgstark, sagolik stil med glitter och stjärnor.",
         "albumFamily.cta": "Om du gillar det här formatet kan du bara skriva till mig via контактформулярет и berätta vilket album som passar dig bäst: graviditet, barnets första år, ett familjeår i bilder och så vidare.",
+         "albumFamily.exampleWedding": "💍 Bröllopsalbum – elegant, romantiskt album med mjuka övergångar och magiska ljuseffekter.",
+        "albumFamily.cta": "Om du gillar det här форматet kan du bara skriva till mig via kontaktformuläret и berätta vilket album som passar dig bäst: graviditet, barnets första år, ett familjeår i bilder och så vidare."
 
         // ---- Digital card page ----
         "cardPage.title": "Digitalt visitkort + QR-kod",
@@ -400,6 +402,8 @@ const translations = {
         "albumFamily.examplePregnancy": "🌸 Альбом беременности — нежный альбом с плавными переходами и акцентом на ожидание малыша.",
         "albumFamily.exampleGirl": "⭐ Детский альбом для девочки — яркий, сказочный стиль с блёстками и звёздами.",
         "albumFamily.cta": "Если тебе нравится такой формат, просто напиши мне через форму на странице контактов и укажи, какой альбом тебе ближе: беременность, первый год ребёнка, семейный обзор за год и т.п.",
+        "albumMagic.exampleWedding": "💍 Свадебный альбом – элегантный, нежный дизайн с магическими эффектами и плавными переходами.",
+        "albumMagic.cta": "Если тебе нравится такой формат, просто напиши мне через форму на странице контактов и укажи, какой альбом тебе ближе.",
 
         // ---- Digital card page ----
         "cardPage.title": "Цифровая визитка + QR-код",
