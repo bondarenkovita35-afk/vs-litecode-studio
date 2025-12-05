@@ -44,7 +44,6 @@ const translations = {
         "services.cv.item1": "Modern, responsiv layout",
         "services.cv.item2": "Lätt att uppdatera senare",
         "services.cv.item3": "Publicering på GitHub Pages ingår",
-        "services.cv.price": "Pris: ca 500–900 kr",
 
         "services.card.title": "2. Digitalt visitkort + QR-kod",
         "services.card.desc": "En digital visitkort är en länk eller QR-kod som öppnar hela din värld: webbplats, sociala medier, kontakt och portfolio. För en affärsperson fungerar den som en liten landningssida som jobbar 24/7, mer än bara ett namn i mobilen. För en vanlig användare är det ett snyggt och enkelt sätt att dela vem man är utan tio olika länkar.",
@@ -55,49 +54,49 @@ const translations = {
         "services.card.item1": "Mobil-först design",
         "services.card.item2": "QR-kod som leder till sidan",
         "services.card.item3": "Anpassad efter din stil och färger",
-        "services.card.price": "Pris: ca 600–900 kr",
+        
 
         "services.simple.title": "3. Enkel hemsida (1–3 sektioner)",
         "services.simple.desc": "För coacher, lärare, frisörer eller andra småföretag som behöver en tydlig hemsida med startsida, kort info om dig, tjänster och kontakt.",
         "services.simple.item1": "Design i dina färger",
         "services.simple.item2": "Responsiv för mobil och surfplatta",
         "services.simple.item3": "Kontaktformulär eller länk till mejl",
-        "services.simple.price": "Pris: ca 1 000–2 000 kr",
+        
 
         "services.portfolio.title": "4. Portfolio / projectsida",
         "services.portfolio.desc": "En stilren sida där du kan visa upp dina arbeten, bilder och projekt. Perfekt för utvecklare, designers, fotografer eller kreativa yrken.",
         "services.portfolio.item1": "Projektkort med bild och beskrivning",
         "services.portfolio.item2": "Länkar till GitHub, LinkedIn eller Fiverr",
         "services.portfolio.item3": "Enkel struktur där du kan lägga till fler projekt",
-        "services.portfolio.price": "Pris: ca 1 500–2 500 kr",
+        
 
         "services.album.title": "5. Magiskt fotoalbum (familje- eller babyalbum)",
         "services.album.desc": "Interaktivt online-album med animationer, mjuka övergångar, glitter- och stjärneffekter. Perfekt för familjefoton eller speciella minnen.",
         "services.album.item1": "Plats för ca 20–50 bilder",
         "services.album.item2": "Responsiv design",
         "services.album.item3": "Delbar länk till familj och vänner",
-        "services.album.price": "Pris: ca 1 000–2 000 kr",
+        
 
         "services.landing.title": "6. Landningssida för kampanj eller företag",
         "services.landing.desc": "En professionell landningssida med hero-sektion, tydliga knappar och modern typografi. Bra för kampanjer, event eller annonser.",
         "services.landing.item1": "Tydlig call-to-action",
         "services.landing.item2": "Optimerad för mobiltrafik",
         "services.landing.item3": "Animerade detaljer och neon-känsla",
-        "services.landing.price": "Pris: ca 3 000–6 000 kr",
+        
 
         "services.fix.title": "7. Anpassning & fix av befintlig hemsida",
         "services.fix.desc": "Jag kan hjälpa dig att rätta små fel, uppdatera designen eller flytta din sida till GitHub Pages.",
         "services.fix.item1": "Design-förbättringar",
         "services.fix.item2": "Responsivitet / mobilanpassning",
         "services.fix.item3": "Felsökning av HTML/CSS",
-        "services.fix.price": "Pris: ca 200–300 kr / timme",
+        
 
         "services.package.title": "8. Komplett paket (CV + Portfolio + Visitkort)",
         "services.package.desc": "Tre produkter i samma stil: online-CV, portfolio-sida och digitalt visitkort med QR-kod. Perfekt om du vill starta din personliga brand.",
         "services.package.item1": "Enhetlig design",
         "services.package.item2": "Snabb leverans",
         "services.package.item3": "Bra paketpris",
-        "services.package.price": "Pris: ca 1 000–2 000 kr",
+        
 
         "portfolio.title": "Portfolio",
         "portfolio.intro": "Här kan du se några av mina senaste projekt. Klicka på korten för att öppna live-versioner.",
@@ -180,7 +179,7 @@ const translations = {
         "services.cv.item1": "Modern, responsive layout",
         "services.cv.item2": "Easy to update later",
         "services.cv.item3": "Publishing on GitHub Pages included",
-        "services.cv.price": "Price: about 500–900 SEK",
+        
 
         "services.card.title": "2. Digital business card + QR code",
         "services.card.desc": "A digital business card is one link or QR code that opens your whole world: website, social media, contact details and portfolio. For a businessperson it works like a small landing page that sells you 24/7, instead of just being another contact in someone’s phone. For a regular user it’s a clean way to share who you are without sending ten different links.",
@@ -191,49 +190,49 @@ const translations = {
         "services.card.item1": "Mobile-first design",
         "services.card.item2": "QR code that leads to the page",
         "services.card.item3": "Styled to match your colours",
-        "services.card.price": "Price: about 600–900 SEK",
+        
 
         "services.simple.title": "3. Simple website (1–3 sections)",
         "services.simple.desc": "For coaches, teachers, hairdressers and other small businesses that need a clear website.",
         "services.simple.item1": "Design in your colours",
         "services.simple.item2": "Responsive for phones and tablets",
         "services.simple.item3": "Contact form or email link",
-        "services.simple.price": "Price: about 1 000–2 000 SEK",
+        
 
         "services.portfolio.title": "4. Portfolio / project page",
         "services.portfolio.desc": "Clean page where you can show your work, images and projects.",
         "services.portfolio.item1": "Project cards with image and text",
         "services.portfolio.item2": "Links to GitHub, LinkedIn or Fiverr",
         "services.portfolio.item3": "Easy structure for adding more projects",
-        "services.portfolio.price": "Price: about 1 500–2 500 SEK",
+        
 
         "services.album.title": "5. Magic photo album (family / baby)",
         "services.album.desc": "Interactive online album with soft transitions, glitter and star effects.",
         "services.album.item1": "Space for about 20–50 photos",
         "services.album.item2": "Responsive design",
         "services.album.item3": "Shareable link for friends and family",
-        "services.album.price": "Price: about 1 000–2 000 SEK",
+        
 
         "services.landing.title": "6. Landing page for campaign or company",
         "services.landing.desc": "Professional landing page with hero section, clear buttons and modern typography.",
         "services.landing.item1": "Clear call-to-action",
         "services.landing.item2": "Optimised for mobile traffic",
         "services.landing.item3": "Animated details and neon feeling",
-        "services.landing.price": "Price: about 3 000–6 000 SEK",
+        
 
         "services.fix.title": "7. Adjustments & fixes of existing website",
         "services.fix.desc": "I can fix small bugs, update design or move your site to GitHub Pages.",
         "services.fix.item1": "Design improvements",
         "services.fix.item2": "Responsive / mobile fixes",
         "services.fix.item3": "HTML/CSS debugging",
-        "services.fix.price": "Price: about 200–300 SEK / hour",
+        
 
         "services.package.title": "8. Complete package (CV + Portfolio + Card)",
         "services.package.desc": "Three products in the same style: online CV, portfolio and digital business card with QR code.",
         "services.package.item1": "Consistent design",
         "services.package.item2": "Fast delivery",
         "services.package.item3": "Good package price",
-        "services.package.price": "Price: about 1 000–2 000 SEK",
+        
 
         "portfolio.title": "Portfolio",
         "portfolio.intro": "Here are some of my latest projects. Click the cards to open the live versions.",
@@ -314,7 +313,7 @@ const translations = {
         "services.cv.item1": "Современный адаптивный дизайн",
         "services.cv.item2": "Легко обновлять в будущем",
         "services.cv.item3": "Публикация на GitHub Pages включена",
-        "services.cv.price": "Цена: примерно 500–900 кр",
+        
 
         "services.card.title": "2. Цифровая визитка + QR-код",
         "services.card.desc": "Цифровая визитка — это одна ссылка или QR-код, который открывает весь твой мир: сайт, соцсети, контакты и портфолио. Для бизнесмена она работает как мини-лендинг 24/7, а не просто ещё один контакт в телефоне. Для обычного человека это красивый и простой способ делиться собой без десяти разных ссылок.",
@@ -325,49 +324,49 @@ const translations = {
         "services.card.item1": "Мобильный дизайн",
         "services.card.item2": "QR-код, ведущий на сайт",
         "services.card.item3": "Стиль подбирается под ваши цвета",
-        "services.card.price": "Цена: примерно 600–900 кр",
+        
 
         "services.simple.title": "3. Простой сайт (1–3 секции)",
         "services.simple.desc": "Для коучей, преподавателей, мастеров и малого бизнеса, кому нужен понятный сайт.",
         "services.simple.item1": "Дизайн в ваших цветах",
         "services.simple.item2": "Адаптивный под телефон и планшет",
         "services.simple.item3": "Контактная форма или ссылка на email",
-        "services.simple.price": "Цена: примерно 1 000–2 000 кр",
+        
 
         "services.portfolio.title": "4. Портфолио / страница проектов",
         "services.portfolio.desc": "Стильная страница для демонстрации ваших работ, изображений и проектов.",
         "services.portfolio.item1": "Карточки проектов с фото и описанием",
         "services.portfolio.item2": "Ссылки на GitHub, LinkedIn или Fiverr",
         "services.portfolio.item3": "Лёгкое добавление новых проектов",
-        "services.portfolio.price": "Цена: примерно 1 500–2 500 кр",
+        
 
         "services.album.title": "5. Волшебный фотоальбом (семейный / детский)",
         "services.album.desc": "Интерактивный онлайн-альбом с плавными анимациями, блёстками и эффектами звёзд.",
         "services.album.item1": "Место для 20–50 фотографий",
         "services.album.item2": "Адаптивный дизайн",
         "services.album.item3": "Удобная ссылка для друзей и семьи",
-        "services.album.price": "Цена: примерно 1 000–2 000 кр",
+        
 
         "services.landing.title": "6. Лендинг для кампании или компании",
         "services.landing.desc": "Профессиональный лендинг с крупным героем, кнопками и современной типографикой.",
         "services.landing.item1": "Чёткий призыв к действию",
         "services.landing.item2": "Оптимизация под мобильный трафик",
         "services.landing.item3": "Анимированные детали и неоновый стиль",
-        "services.landing.price": "Цена: примерно 3 000–6 000 кр",
+        
 
         "services.fix.title": "7. Исправление и настройка существующего сайта",
         "services.fix.desc": "Помогаю исправить ошибки, обновить дизайн или перенести сайт на GitHub Pages.",
         "services.fix.item1": "Улучшение дизайна",
         "services.fix.item2": "Мобильная адаптация",
         "services.fix.item3": "Поиск и исправление ошибок в HTML/CSS",
-        "services.fix.price": "Цена: примерно 200–300 кр / час",
+        
 
         "services.package.title": "8. Полный пакет (CV + Портфолио + Визитка)",
         "services.package.desc": "Три продукта в одном стиле: онлайн-резюме, портфолио и цифровая визитка с QR-кодом.",
         "services.package.item1": "Единый современный стиль",
         "services.package.item2": "Быстрая работа",
         "services.package.item3": "Выгодная цена",
-        "services.package.price": "Цена: примерно 1 000–2 000 кр",
+        
 
         "portfolio.title": "Портфолио",
         "portfolio.intro": "Некоторые из моих последних проектов. Нажмите на карточку, чтобы открыть живую версию.",
