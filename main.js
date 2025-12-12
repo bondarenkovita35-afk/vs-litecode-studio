@@ -25,6 +25,8 @@ const translations = {
         "nav.services": "Tjänster",
         "nav.portfolio": "Portfolio",
         "nav.contact": "Kontakt",
+        "nav.about": "Om mig",
+        
 
         "hero.tag": "Webbutvecklare · HTML · CSS · JS · .NET · Stockholm, Sverige",
         "hero.title": "Välkommen till VS LiteCode Studio!",
@@ -160,6 +162,8 @@ const translations = {
         "nav.services": "Services",
         "nav.portfolio": "Portfolio",
         "nav.contact": "Contact",
+        "nav.about": "About me",
+        
 
         "hero.tag": "Web developer · HTML · CSS · JS · .NET · Stockholm, Sweden",
         "hero.title": "Welcome to VS LiteCode Studio!",
@@ -294,6 +298,7 @@ const translations = {
         "nav.services": "Услуги",
         "nav.portfolio": "Портфолио",
         "nav.contact": "Контакты",
+        "nav.about": "Обо мне",
 
         "hero.tag": "Веб-разработчик · HTML · CSS · JS · .NET · Стокгольм, Швеция",
         "hero.title": "Добро пожаловать в VS LiteCode Studio!",
