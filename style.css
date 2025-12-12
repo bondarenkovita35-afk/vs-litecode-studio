@@ -293,7 +293,7 @@ body.light-theme .page-title {
     border-radius: 32px;
     background:
         conic-gradient(from 180deg,
-            #ff6ad5, #ffd26f, #8b74ff, #2af5ff, #ff6ad5);
+            #ff6ad5,  #8b74ff, #ff6ad5);
     box-shadow: 0 0 35px rgba(255, 122, 229, 0.8);
     animation: frame-rotate 12s linear infinite;
 }
@@ -307,7 +307,7 @@ body.light-theme .page-title {
     display: block;
     border-radius: 26px;
     width: 100%;
-    max-width: 320px;
+    max-width: 200px;
     object-fit: cover;
 }
 
