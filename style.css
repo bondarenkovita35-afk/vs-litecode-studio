@@ -84,7 +84,7 @@ body.light-theme .page-title {
     justify-content: space-between;
     align-items: center;
     padding: 0.75rem 1.5rem;
-    background: linear-gradient(to right, rgba(5, 4, 20, 0.92), rgba(25, 8, 50, 0.9));
+    background: linear-gradient(to right, rgba(9, 7, 31, 0.92), rgba(25, 8, 50, 0.9));
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(16px);
 }
@@ -159,7 +159,7 @@ body.light-theme .page-title {
 
 .nav-links a.active {
     background: linear-gradient(90deg, #ff6ad5, #8b74ff);
-    color: #05030b;
+    color: #110a24;
     font-weight: 600;
 }
 
@@ -203,10 +203,10 @@ body.light-theme .page-title {
     gap: 2rem;
     background: radial-gradient(circle at top left, rgba(255, 0, 150, 0.35), transparent 65%),
                 radial-gradient(circle at bottom right, rgba(0, 200, 255, 0.35), transparent 70%),
-                rgba(5, 3, 20, 0.9);
+                rgba(17, 13, 50, 0.9);
     border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 30px 80px rgba(21, 20, 20, 0.6);
 }
 
 .hero-text {
@@ -260,7 +260,7 @@ body.light-theme .page-title {
 
 .btn-primary {
     background: radial-gradient(circle at 0 0, #ff8fd1, #ff6ad5 40%, #885bff 100%);
-    color: #050308;
+    color: #161020;
     box-shadow: 0 0 25px rgba(255, 106, 213, 0.6);
 }
 
@@ -380,7 +380,7 @@ body.light-theme .page-title {
 .contact-form {
     width: 100%;
     padding: 1.8rem;
-    background: rgba(8, 4, 24, 0.9);
+    background: rgba(20, 17, 36, 0.9);
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
@@ -401,7 +401,7 @@ body.light-theme .page-title {
     padding: 0.6rem 0.7rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    background: rgba(5, 3, 18, 0.9);
+    background: rgba(29, 25, 52, 0.9);
     color: #f6f4ff;
 }
 
@@ -546,3 +546,49 @@ body::before {
 .lc-button-motion--active::before {
     opacity: 1;
 }
+/* ================================
+   PREMIUM GLASS CARDS (shared)
+   Add to the END of style.css
+================================== */
+
+/* общий “светлый” тон карточек как на About */
+:root{
+  --card-bg: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.08));
+  --card-border: 1px solid rgba(255,255,255,.14);
+  --card-shadow: 0 14px 40px rgba(0,0,0,.20);
+  --card-radius: 20px;
+
+  --card-glow:
+    radial-gradient(420px 200px at 10% 0%, rgba(0,220,255,.16), transparent 60%),
+    radial-gradient(420px 200px at 90% 0%, rgba(255,120,214,.12), transparent 60%),
+    radial-gradient(520px 240px at 50% 120%, rgba(160,255,180,.10), transparent 60%);
+}
+
+/* универсальный класс карточки */
+.glass-card{
+  position: relative;
+  border-radius: var(--card-radius);
+  padding: 18px;
+  background: var(--card-bg);
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.glass-card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  border-radius: inherit;
+  background: var(--card-glow);
+  opacity:.75;
+  pointer-events:none;
+  mix-blend-mode: screen;
+}
+
+/* чтобы текст был читабельным */
+.glass-card h2,
+.glass-card h3{ color: rgba(255,255,255,.92); }
+
+.glass-card p,
+.glass-card li{ color: rgba(255,255,255,.78); }
