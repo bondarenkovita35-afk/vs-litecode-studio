@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Портфолио – VS LiteCode Studio</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Портфолио проектов VS LiteCode Studio: сайты, лендинги, онлайн-CV и digital продукты." />
+    <meta name="keywords" content="portfolio, projects, веб разработка, лендинг, online cv, VS LiteCode Studio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body class="dark-theme">
+    <div class="background-glow"></div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="logo-area">
+            <div class="logo-glow">
+                <img src="assets/logo/logo.png" alt="VS LiteCode Studio logo" class="logo-img" />
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <span class="studio-name">VS LITECODE STUDIO</span>
+        </div>
+
+        <nav class="main-nav">
+            <button class="nav-toggle" id="nav-toggle">☰</button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Услуги</a></li>
+                <li><a href="portfolio.html" data-i18n="nav.portfolio">Портфолио</a></li>
+                <li><a href="about.html" data-i18n="nav.about">Обо мне</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Контакты</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Byt tema">🌙</button>
+                <button id="lang-toggle" class="icon-btn" aria-label="Byt språk">SV</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="page-main services-page">
+
+        <!-- HERO -->
+        <section class="album-hero">
+            <h1 class="page-title" data-i18n="portfolioService.title">
+
+                Портфолио / страница проектов
+            </h1>
+
+
+            <p class="album-lead" data-i18n="portfolioService.lead">
+                Стильная страница, где ваши проекты выглядят профессионально и понятны с первого взгляда.
+            </p>
+
+            <p data-i18n="portfolioService.p1">
+                Такое портфолио подходит разработчикам, дизайнерам, специалистам и всем, кто хочет показать свои
+                работы красиво и структурно.
+            </p>
+
+            <p data-i18n="portfolioService.p2">
+                Страница легко обновляется: вы сможете добавлять новые проекты, ссылки и кейсы без хаоса и перегрузки.
+            </p>
+        </section>
+
+        <!-- MAIN EXAMPLE -->
+        <section class="services-grid">
+            <article class="service-card">
+                <h2 data-i18n="portfolioService.main.title">Пример портфолио</h2>
+                
+
+                <p data-i18n="portfolioService.main.intro">
+                    Ниже — пример страницы проектов, которая показывает структуру, стиль и подачу.
+                </p>
+
+                <p class="example-link-label">
+                    <strong data-i18n="portfolioService.main.linkLabel">Пример / шаблон:</strong><br />
+                    <a href="https://bondarenkovita35-afk.github.io/fronted1-portfolio-vitaliia/" target="_blank"
+                        rel="noopener" data-i18n="portfolioService.main.linkText">
+                        Läs mer om portfolio-tjänsten
+                    </a>
+                </p>
+
+                <p data-i18n="portfolioService.main.cta">
+                    Хочешь похожую страницу проектов — напиши мне, и я сделаю портфолио под твой стиль и цель.
+                </p>
+            </article>
+        </section>
+
+        <!-- WHAT YOU GET -->
+        <section class="album-examples">
+            <h3 data-i18n="portfolioService.get.title">Что ты получаешь</h3>
+
+            <ul class="album-benefits">
+                <li data-i18n="portfolioService.get.1">
+                    Карточки проектов с фото и коротким описанием
+                </li>
+                <li data-i18n="portfolioService.get.2">
+                    Ссылки на GitHub, LinkedIn или Fiverr
+                </li>
+                <li data-i18n="portfolioService.get.3">
+                    Лёгкое добавление новых проектов
+                </li>
+                <li data-i18n="portfolioService.get.4">
+                    Адаптивность под телефон и планшет
+                </li>
+                <li data-i18n="portfolioService.get.5">
+                    Единый стиль, который усиливает личный бренд
+                </li>
+            </ul>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <p data-i18n="portfolioService.cta.text">
+                Если тебе нужно портфолио или полный пакет (CV + Portfolio + Digital Card) — напиши мне, и мы подберём
+                лучший формат.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary" data-i18n="portfolioService.cta.btn">
+                Связаться
+            </a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <span>© 2025 VS LiteCode Studio · Vitaliia Sivakova · Stockholm</span>
+    </footer>
+
+    <!-- JS -->
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+
+    <!-- общий i18n файл -->
+    <script src="komplett-paket-i18n.js"></script>
+</body>
+
+</html>
