@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Komplett paket – VS LiteCode Studio</title>
+
+    <meta name="description"
+        content="Komplett paket: Online CV, Portfolio och Digitalt visitkort med QR-kod. En professionell lösning för personlig branding.">
+    <meta name="keywords"
+        content="online CV, portfolio website, digital business card, personal brand, VS LiteCode Studio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body class="dark-theme">
+    <div class="background-glow"></div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="logo-area">
+            <div class="logo-glow">
+                <img src="assets/logo/logo.png" alt="VS LiteCode Studio logo" class="logo-img" />
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <span class="studio-name">VS LITECODE STUDIO</span>
+        </div>
+
+        <nav class="main-nav">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Tjänster</a></li>
+                <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="about.html" data-i18n="nav.about">Om mig</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Byt tema">🌙</button>
+                <button id="lang-toggle" class="icon-btn" aria-label="Byt språk">SV</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="page-main services-page">
+
+        <!-- HERO -->
+        <section class="album-hero">
+            <h1 class="page-title" data-i18n="package.title">
+                Komplett paket – Digital Personal Brand
+            </h1>
+
+            <p class="album-lead" data-i18n="package.lead">
+                Tre produkter. En helhet. Ett professionellt system som bygger förtroende,
+                synlighet och tydlig närvaro online.
+            </p>
+
+            <p data-i18n="package.text">
+                Detta paket kombinerar online-CV, portfolio-webbplats och digitalt visitkort
+                i ett enhetligt visuellt och tekniskt koncept. Alla delar samverkar och leder besökaren rätt.
+            </p>
+        </section>
+
+        <!-- CONTENT -->
+        <section class="services-grid">
+            <article class="service-card glass-card">
+                <h2 data-i18n="package.card.title">CV + Portfolio + Digitalt visitkort</h2>
+
+                <p data-i18n="package.card.desc">
+                    Paketet är utvecklat för specialister, frilansare och entreprenörer
+                    som vill presentera sig professionellt och vara enkla att kontakta.
+                </p>
+
+                <ul>
+                    <li data-i18n="package.item1">Online-CV – tydlig presentation av erfarenhet och kompetenser</li>
+                    <li data-i18n="package.item2">Portfolio-webbplats – projekt, tjänster och arbetsstil</li>
+                    <li data-i18n="package.item3">Digitalt visitkort med QR-kod – allt samlat i en länk</li>
+                </ul>
+
+                <p data-i18n="package.result">
+                    Resultatet är en sammanhängande digital profil där besökaren snabbt förstår vem du är,
+                    vad du erbjuder och hur man tar kontakt.
+                </p>
+
+                <ul>
+                    <li data-i18n="package.benefit1">Enhetlig design och färgsystem</li>
+                    <li data-i18n="package.benefit2">Logisk navigation mellan alla delar</li>
+                    <li data-i18n="package.benefit3">Responsiv design för mobil och desktop</li>
+                </ul>
+
+                <p class="example-link-label">
+                    <strong data-i18n="package.example">Exempel:</strong><br>
+                    <a href="https://bondarenkovita35-afk.github.io/my-cv/" target="_blank" rel="noopener">Online
+                        CV</a><br>
+                    <a href="https://bondarenkovita35-afk.github.io/Digital-visitkort-med-QR-kod/" target="_blank"
+                        rel="noopener">Digitalt visitkort</a><br>
+                    <a href="https://bondarenkovita35-afk.github.io/vs-litecode-studio/" target="_blank"
+                        rel="noopener">Portfolio / Studio website</a>
+                </p>
+
+                <p class="price" data-i18n="package.price">
+                    Enhetlig design · Snabb leverans · Bra paketpris
+                </p>
+            </article>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <p data-i18n="package.cta.text">
+                Vill du bygga eller stärka ditt personliga varumärke online?
+                Kontakta mig så diskuterar vi lösningen som passar dig.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary" data-i18n="package.cta.btn">
+                Kontakta mig
+            </a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <span>© 2025 VS LiteCode Studio · Vitaliia Sivakova · Stockholm</span>
+    </footer>
+
+    <!-- JS -->
+    <script src="menu.js"></script>
+
+    <!-- main.js должен быть БЕЗ языка (только тема/общие вещи) -->
+    <script src="main.js"></script>
+
+    <!-- язык только этой страницы -->
+    <script src="komplett-paket-i18n.js"></script>
+</body>
+
+</html>
