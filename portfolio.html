@@ -1,143 +1,152 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQF28C71PZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-PQF28C71PZ');
-    </script>
-    <meta charset="UTF-8" />
-    <!-- SEO SETTINGS -->
-    <meta name="description"
-        content="VS LiteCode Studio — веб-разработка, дизайн, создание сайтов, портфолио и персональные проекты. Современный minimal-дизайн и быстрые сайты от Vita Sivakova.">
-    <meta name="keywords"
-        content="web development, web design, portfolio, VS LiteCode Studio, Vita Sivakova, разработка сайтов, webbutveckling, frontend, HTML CSS Javascript">
-    <meta name="author" content="Vita Sivakova">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="VS LiteCode Studio — Webbutveckling & Portfolio">
-    <meta property="og:description"
-        content="Современная веб-студия: стильные сайты, дизайн, портфолио и frontend-проекты.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bondarenkovita35-afk.github.io/vs-litecode-studio/">
-    <meta property="og:image" content="assets/logo/logo.png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio – VS LiteCode Studio</title>
+<style>
+:root{
+  --pink:#ff0099;
+  --pink-deep:#8a2be2;
+  --cyan:#c7c3e0;
+  --lime:#e7e4f5;
+  --ink:#f5f5ff;
+  --muted:#b9b6d6;
+  --glass:rgba(255,255,255,.06);
+  --glass-border:rgba(255,255,255,.14);
+  --radius:22px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+  background:radial-gradient(circle at top,#1a1030 0,#05040a 60%,#02010a 100%);
+  color:var(--ink);
+  line-height:1.6;
+  min-height:100vh;
+}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 6vw}
 
-    <link rel="canonical" href="https://bondarenkovita35-afk.github.io/vs-litecode-studio/portfolio.html" />
+.site-header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  padding:.9rem 6vw;background:linear-gradient(to right, rgba(9,7,31,.9), rgba(25,8,50,.88));
+  border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(16px)}
+.logo-area{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-img{width:38px;height:38px;border-radius:11px;object-fit:cover;box-shadow:0 0 18px rgba(255,0,153,.35)}
+.studio-name{font-weight:800;letter-spacing:.06em;font-size:14px}
+.back-link{font-size:13.5px;font-weight:700;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px}
+.back-link:hover{color:#fff}
 
+.page-hero{padding:56px 0 16px;text-align:center}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);font-weight:800;margin-bottom:12px}
+.page-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,46px);margin-bottom:12px}
+.page-hero p{color:var(--muted);font-size:15.5px;max-width:560px;margin:0 auto}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio – VS LiteCode Studio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="portfolio.css" />
-    <link rel="stylesheet" href="responsive.css" />
+.projects-list{padding:32px 0 90px;display:flex;flex-direction:column;gap:26px}
+.project-card{scroll-margin-top:90px;display:grid;grid-template-columns:.85fr 1.15fr;border-radius:var(--radius);overflow:hidden;background:var(--glass);border:1px solid var(--glass-border);transition:box-shadow .25s ease}
+.project-card:target{box-shadow:0 0 0 2px rgba(255,0,153,.5),0 24px 50px rgba(0,0,0,.4)}
+.project-image{width:100%;height:100%;min-height:220px;object-fit:cover;background:#0b0c1c}
+.project-content{padding:28px 30px}
+.project-content h2{font-size:20px;margin-bottom:8px}
+.project-content>p{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+.tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.tag{font-size:10.5px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid var(--glass-border)}
+
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:18px}
+.case-block h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--cyan);margin-bottom:6px;font-weight:800}
+.case-block p{font-size:12.5px;color:var(--muted)}
+
+.project-link{display:inline-flex;align-items:center;gap:7px;font-weight:800;font-size:13.5px;color:var(--pink);text-decoration:none}
+.project-link:hover{text-decoration:underline}
+.project-link-locked{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:13.5px;color:var(--muted)}
+
+@media(max-width:760px){
+  .project-card{grid-template-columns:1fr}
+  .project-image{min-height:180px}
+  .case-grid{grid-template-columns:1fr}
+}
+</style>
 </head>
+<body>
+  <header class="site-header">
+    <a class="logo-area" href="index.html">
+      <img src="assets/logo/logo.png" alt="VS LiteCode Studio" class="logo-img" />
+      <span class="studio-name">VS LITECODE STUDIO</span>
+    </a>
+    <a class="back-link" href="index.html">← Till startsidan</a>
+  </header>
 
-<body class="dark-theme">
-    <div class="background-glow"></div>
+  <main class="wrap">
+    <div class="page-hero">
+      <span class="eyebrow">Portfolio</span>
+      <h1>Ett urval av projekt</h1>
+      <p>Riktiga sajter och applikationer, byggda för riktiga kunder och egna projekt — uppdrag, roll och lösning för varje.</p>
+    </div>
 
-    <header class="site-header">
-        <div class="logo-area glow-logo">
-            <img src="assets/logo/logo.png" alt="VS LiteCode Studio logotyp" class="logo-img" />
-            <span class="studio-name">VS LITECODE STUDIO</span>
+    <section class="projects-list">
+
+      <article class="project-card" id="true-sweden">
+        <img src="assets/images/project-truesweden.svg" alt="True Sweden" class="project-image" />
+        <div class="project-content">
+          <h2>True Sweden – e-handel med AI-provning</h2>
+          <p>Fullstack webbshop med Stripe-betalningar och ett AI-kredit-system där kunder kan prova kläder digitalt innan köp.</p>
+          <div class="case-grid">
+            <div class="case-block"><h4>Uppdrag</h4><p>Kunden ville sälja kläder online och minska returer med en digital provning innan köp.</p></div>
+            <div class="case-block"><h4>Min roll</h4><p>Fullstack-utvecklare — byggde hela plattformen, databas och betalningsflöde själv.</p></div>
+            <div class="case-block"><h4>Lösning</h4><p>Next.js-butik med Prisma/PostgreSQL, Stripe, krediter för AI-baserad klädprovning, orderspårning och adminpanel.</p></div>
+          </div>
+          <div class="tag-row"><span class="tag">Next.js</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span><span class="tag">Stripe</span></div>
+          <span class="project-link-locked">🔒 Privat kundprojekt – kod på begäran</span>
         </div>
+      </article>
 
-        <nav class="main-nav">
-            <button class="nav-toggle" id="nav-toggle" aria-label="Öppna meny">☰</button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
-                <li><a href="services.html" data-i18n="nav.services">Tjänster</a></li>
-                <li><a href="portfolio.html" class="active" data-i18n="nav.portfolio">Portfolio</a></li>
-                <li><a href="about.html" data-i18n="nav.about">Om mig</a></li>
-                <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+      <article class="project-card" id="staffflow">
+        <img src="assets/images/project-staffflow.svg" alt="StaffFlow" class="project-image" />
+        <div class="project-content">
+          <h2>StaffFlow – HR-plattform för skift & lager</h2>
+          <p>Fullstack HR-applikation för schemaläggning, skiftbyten och digitala pappersblanketter för lagerpersonal.</p>
+          <div class="case-grid">
+            <div class="case-block"><h4>Uppdrag</h4><p>Verksamheten behövde ersätta manuell schemaläggning och pappersblanketter med ett digitalt system.</p></div>
+            <div class="case-block"><h4>Min roll</h4><p>Fullstack-utvecklare — backend, frontend, databas och driftsättning med Docker.</p></div>
+            <div class="case-block"><h4>Lösning</h4><p>HR-app i React och ASP.NET Core med schemaläggning, skiftbyten, Excel-import och digitala blanketter.</p></div>
+          </div>
+          <div class="tag-row"><span class="tag">React</span><span class="tag">ASP.NET Core</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
+          <span class="project-link-locked">🔒 Privat kundprojekt – kod på begäran</span>
+        </div>
+      </article>
 
-            </ul>
-            <div class="header-actions">
-                <button id="theme-toggle" class="icon-btn" aria-label="Byt tema">🌙</button>
-                <button id="lang-toggle" class="icon-btn" aria-label="Byt språk">SV</button>
-            </div>
-        </nav>
-    </header>
+      <article class="project-card" id="familjealbum">
+        <img src="assets/images/project-album.png" alt="Familjealbum" class="project-image" />
+        <div class="project-content">
+          <h2>Magiskt fotoalbum – familjeprojekt</h2>
+          <p>Ett modernt och responsivt fotoalbum med mjuka övergångar och animationer.</p>
+          <div class="case-grid">
+            <div class="case-block"><h4>Uppdrag</h4><p>En familj ville ha ett personligt digitalt album att dela med släkt och vänner.</p></div>
+            <div class="case-block"><h4>Min roll</h4><p>Design och utveckling — hela sajten från idé till publicering.</p></div>
+            <div class="case-block"><h4>Lösning</h4><p>Responsivt album med mjuka övergångar och animationer i HTML, CSS och JavaScript.</p></div>
+          </div>
+          <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <a href="https://bondarenkovita35-afk.github.io/baby-album/" target="_blank" rel="noopener" class="project-link">Live-demo →</a>
+        </div>
+      </article>
 
-    <main class="page-main portfolio-page">
-        <h1 class="page-title" data-i18n="portfolio.title">Portfolio</h1>
-        <p class="page-intro" data-i18n="portfolio.intro">
-            Här kan du se några av mina senaste projekt. Klicka på korten för att öppna live-versioner.
-        </p>
+      <article class="project-card" id="landningssida">
+        <img src="assets/images/project-boxing.png" alt="Landningssida för boxningstränare" class="project-image" />
+        <div class="project-content">
+          <h2>Landningssida – boxningstränare</h2>
+          <p>Kundprojekt med schema, priser, galleri och kontaktformulär i neon-inspirerad design.</p>
+          <div class="case-grid">
+            <div class="case-block"><h4>Uppdrag</h4><p>En boxningstränare behövde en sajt för schema, priser och bokningsförfrågningar.</p></div>
+            <div class="case-block"><h4>Min roll</h4><p>Design och utveckling — från första skiss till publicerad sajt.</p></div>
+            <div class="case-block"><h4>Lösning</h4><p>Landningssida med schema, priser, galleri, kontaktformulär och Google Maps-karta.</p></div>
+          </div>
+          <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <a href="https://bondarenkovita35-afk.github.io/boxing-coach-website/" target="_blank" rel="noopener" class="project-link">Live-demo →</a>
+        </div>
+      </article>
 
-        <section class="projects-grid">
-
-            <!-- Online CV – ditt CV -->
-            <article class="project-card glass-card">
-                <img src="assets/images/project-cv.png" alt="Online-CV" class="project-image" />
-                <div class="project-content">
-                    <h2 data-i18n="portfolio.cv.title">Online-CV – Vitaliia</h2>
-                    <p data-i18n="portfolio.cv.desc">
-                        Webbaserat CV med personlig text, sektioner för erfarenhet och utbildning, samt länk till GitHub
-                        och LinkedIn.
-                    </p>
-                    <a href="https://bondarenkovita35-afk.github.io/CVAlexeySivakov.ps.VS/" target="_blank"
-                        class="project-link">
-                        Live-demo
-                    </a>
-                </div>
-            </article>
-
-            <!-- Portfolio-sida -->
-            <article class="project-card glass-card">
-                <img src="assets/images/project-portfolio.png" alt="Portfolio-sida" class="project-image" />
-                <div class="project-content">
-                    <h2 data-i18n="portfolio.studio.title">VS LiteCode Studio – portfoliosida</h2>
-                    <p data-i18n="portfolio.studio.desc">
-                        En sida som presenterar tjänster, projekt och kontakt – byggd för att visa upp min
-                        webbutveckling.
-                    </p>
-                    <a href="https://bondarenkovita35-afk.github.io/my-cv/" target="_blank" class="project-link">
-                        Live-demo
-                    </a>
-                </div>
-            </article>
-
-            <!-- Boxing coach -->
-            <article class="project-card glass-card">
-                <img src="assets/images/project-boxing.png" alt="Boxningstränare" class="project-image" />
-                <div class="project-content">
-                    <h2 data-i18n="portfolio.box.title">Hemsida för boxningstränare</h2>
-                    <p data-i18n="portfolio.box.desc">
-                        Kundprojekt med schema, priser, galleri, kontaktformulär och Google Maps-karta. Neon-inspirerad
-                        design.
-                    </p>
-                    <a href="https://bondarenkovita35-afk.github.io/boxing-coach-website/" target="_blank"
-                        class="project-link">
-                        Live-demo
-                    </a>
-                </div>
-            </article>
-
-            <!-- Magiskt fotoalbum -->
-            <article class="project-card glass-card">
-                <img src="assets/images/project-album.png" alt="Magiskt fotoalbum" class="project-image" />
-                <div class="project-content">
-                    <h2 data-i18n="portfolio.album.title">Magiskt fotoalbum – familjeprojekt</h2>
-                    <p data-i18n="portfolio.album.desc">
-                        Ett modernt och responsivt fotoalbum med HTML, CSS och JavaScript. Skapat som en del av min
-                        utvecklingsportfölj.
-                    </p>
-                    <a href="https://bondarenkovita35-afk.github.io/baby-album/" target="_blank" class="project-link">
-                        Live-demo
-                    </a>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <span>© 2025 VS LiteCode Studio · Vitaliia Sivakova · Stockholm, Sverige</span>
-    </footer>
-
-    <script src="menu.js"></script>
-    <script src="main.js"></script>
+    </section>
+  </main>
 </body>
-
 </html>

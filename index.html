@@ -1,148 +1,478 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQF28C71PZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-PQF28C71PZ');
-  </script>
-  <meta charset="UTF-8" />
-  <!-- SEO SETTINGS -->
-  <meta name="description"
-    content="VS LiteCode Studio — веб-разработка, дизайн, создание сайтов, портфолио и персональные проекты. Современный minimal-дизайн и быстрые сайты от Vita Sivakova.">
-  <meta name="keywords" content="web development, web design, portfolio, VS LiteCode Studio, Vita Sivakova, разработка сайтов, webbutveckling, frontend, HTML CSS Javascript, .NET developer, C# programmering,web development, web design, portfolio, digital CV, VS LiteCode Studio, Vita Sivakova, frontend, hemsida, digital design,Vita Sivakova, Vitaliia Sivakova, Vita Bondarenko, Вита Сивакова, Вита Бондаренко,
-створення сайтів, цифрові візитки, візитки онлайн, вебдизайн Україна, Фотоальбоми, онлайн Фотоальбоми,
-створення сайтів недорого, портфоліо вебдизайнера, сайт-візитка, розробка сайтів Україна,
-нейродизайн, нейродизайн сайтів, студія дизайну сайтів, лендинг компанії, лендинг,
-сімейний онлайн фотоальбом, веб-розробка, розробка сайтів професійно,
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VS LiteCode Studio – Webbutveckling & Design</title>
+<style>
+:root{
+  --pink:#ff0099;
+  --pink-deep:#8a2be2;
+  --cyan:#c7c3e0;
+  --lime:#e7e4f5;
+  --ink:#f5f5ff;
+  --muted:#b9b6d6;
+  --glass:rgba(255,255,255,.06);
+  --glass-border:rgba(255,255,255,.14);
+  --radius:22px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+  background:radial-gradient(circle at top,#1a1030 0,#05040a 60%,#02010a 100%);
+  color:var(--ink);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 6vw}
 
-создание сайтов, цифровые визитки, визитки онлайн, вебдизайн Украина, фотоальбомы онлайн,
-создание сайтов недорого, создание сайтов профессионально, нейродизайн сайтов, студия дизайна сайтов,
-семейный онлайн фотоальбом, портфолио, проекты, веб-разработка, веб-сайт,
+/* ---------- ambient background ---------- */
+.bg-glow{position:fixed;inset:-200px;pointer-events:none;z-index:-2;
+  background:
+    radial-gradient(circle at 12% 15%, rgba(255,0,153,.14) 0, transparent 45%),
+    radial-gradient(circle at 90% 85%, rgba(138,43,226,.10) 0, transparent 50%);
+}
+#particles{position:fixed;inset:0;z-index:-1;pointer-events:none;display:block}
+.orb{position:fixed;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:-1;opacity:.3}
+.orb-1{width:420px;height:420px;left:-140px;top:8%;background:radial-gradient(circle,var(--pink),transparent 70%);animation:driftA 16s ease-in-out infinite alternate}
+.orb-2{width:360px;height:360px;right:-120px;top:32%;background:radial-gradient(circle,var(--pink-deep),transparent 70%);animation:driftB 18s ease-in-out infinite alternate}
+@keyframes driftA{to{transform:translate(60px,-40px) scale(1.1)}}
+@keyframes driftB{to{transform:translate(-50px,50px) scale(1.08)}}
 
-web design, website design, web development, responsive design, portfolio website,
-business landing page, digital business card, online portfolio, creative web studio,
-modern web development, UI design, UX design, personal website, website creator,
-frontend developer, one-page website, product landing page, creative website project,
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  padding:.9rem 6vw;background:linear-gradient(to right, rgba(9,7,31,.9), rgba(25,8,50,.88));
+  border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(16px)}
+.logo-area{display:flex;align-items:center;gap:10px}
+.logo-img{width:38px;height:38px;border-radius:11px;object-fit:cover;box-shadow:0 0 22px rgba(255,0,153,.45)}
+.studio-name{font-weight:800;letter-spacing:.06em;font-size:14px}
+.main-nav{display:flex;align-items:center;gap:28px}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{text-decoration:none;font-size:14px;font-weight:600;color:var(--muted);position:relative;transition:.2s}
+.nav-links a:hover{color:#fff}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:linear-gradient(90deg,var(--pink),var(--cyan));transition:.25s}
+.nav-links a:hover::after{width:100%}
+.cta-mini{padding:9px 18px;border-radius:999px;background:linear-gradient(135deg,var(--pink),#8a2be2);font-weight:700;font-size:13px;text-decoration:none;box-shadow:0 8px 24px rgba(255,0,153,.3);white-space:nowrap}
 
-hemsida, webbdesign, webbdesigner, skapa hemsida, digitala visitkort,
-webbutveckling, portfolio hemsida, företagshemsida, landningssida,
-digital design studio, grafisk design, skapa webbplats, svensk webbutveckling,
+/* ---------- hero ---------- */
+.hero{position:relative;padding:52px 0 36px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;perspective:1400px}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;border:1px solid var(--glass-border);background:var(--glass);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);font-weight:700}
+.hero-tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime)}
+.hero h1{margin:14px 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(32px,3.6vw,50px);line-height:1.08;letter-spacing:-.01em;opacity:0;transform:translateY(14px);animation:heroIn .7s cubic-bezier(.16,1,.3,1) forwards}
+.hero h1 .grad{background:linear-gradient(120deg,var(--pink),var(--cyan) 60%,var(--lime));-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes heroIn{to{opacity:1;transform:none}}
+.hero p.lead{font-size:16px;color:var(--muted);max-width:520px;margin-bottom:20px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.cta-actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 24px;border-radius:999px;font-weight:800;font-size:15px;text-decoration:none;transition:.25s ease;border:1px solid transparent}
+.btn-primary{background:linear-gradient(135deg,var(--pink),#8a2be2);box-shadow:0 14px 36px rgba(255,0,153,.32)}
+.btn-primary:hover{transform:translateY(-3px)}
+.btn-ghost{background:var(--glass);border-color:var(--glass-border);backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+.trust-row{display:flex;gap:26px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);font-weight:600}
+.trust-item::before{content:"✓";width:20px;height:20px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--lime));color:#04030a;display:grid;place-items:center;font-size:12px;font-weight:900}
 
-VS LiteCode Studio, litecode studio, студия LiteCode, вебстудия, web agency,
-digital agency, creative agency, website for business, personal branding website,
-online photo albums, interactive portfolio, minimalist web design, modern design trends">
-  <meta name="author" content="Vita Sivakova">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="VS LiteCode Studio — Webbutveckling & Portfolio">
-  <meta property="og:description" content="Современная веб-студия: стильные сайты, дизайн, портфолио и frontend-проекты.VS LiteCode Studio — современная веб-студия,
-Мы разрабатываем стильные сайты, цифровые визитки, портфолио, CV, нейродизайн и персональные проекты.
-Минимализм, эстетика, анимации и удобство для клиента,VS LiteCode Studio — веб-студия Виты Сиваковой и Виты Бондаренко.
-Створення сайтів, вебдизайн, цифрові візитки, лендинги, сімейні онлайн фотоальбоми, портфоліо, нейродизайн,
-професійна веброзробка. Modern web design, digital business cards, portfolio websites, creative landing pages,
-frontend development and UI/UX design. Skapa hemsida, webbdesign och digitala visitkort.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bondarenkovita35-afk.github.io/vs-litecode-studio/">
-  <meta property="og:image" content="assets/logo/logo.png">
+.hero-photo-wrap{position:relative;transform-style:preserve-3d;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:20px}
+.neon-frame{position:relative;border-radius:50%;padding:6px;width:152px;height:152px;background:linear-gradient(155deg,rgba(255,0,153,.5),rgba(138,43,226,.35));box-shadow:0 20px 50px rgba(0,0,0,.5),0 0 30px rgba(255,0,153,.18);transition:transform .25s ease}
+.neon-frame img{border-radius:50%;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 15%;display:block}
+.hero-caption{margin-top:16px;padding:14px 20px;border-radius:18px;background:rgba(10,6,24,.82);border:1px solid var(--glass-border);backdrop-filter:blur(10px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.hero-caption h2{font-size:17px;margin-bottom:2px}
+.hero-caption p{font-size:12.5px;color:var(--muted);font-weight:600}
+.floating-badge{margin-top:14px;padding:8px 15px;border-radius:999px;background:rgba(10,6,24,.85);border:1px solid var(--glass-border);font-size:11.5px;font-weight:800;color:var(--lime);box-shadow:0 14px 30px rgba(0,0,0,.4)}
 
-  <link rel="canonical" href="https://bondarenkovita35-afk.github.io/vs-litecode-studio/" />
+/* ---------- section shell ---------- */
+.section{padding:86px 0}
+.section-head{max-width:640px;margin:0 auto 46px;text-align:center}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);font-weight:800;margin-bottom:12px}
+.section h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,3.6vw,42px);margin-bottom:12px}
+.section p.desc{color:var(--muted);font-size:15.5px}
 
+.reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.16,1,.3,1)}
+.reveal.show{opacity:1;transform:none}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0." />
-  <title>VS LiteCode Studio – Webbutveckling</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="responsive.css" />
+/* ---------- services ---------- */
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.s-card{position:relative;padding:26px 24px;border-radius:var(--radius);background:var(--glass);border:1px solid var(--glass-border);backdrop-filter:blur(8px);transition:transform .25s ease,box-shadow .25s ease;transform-style:preserve-3d}
+.s-card:hover{box-shadow:0 24px 50px rgba(0,0,0,.4)}
+.s-icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-size:20px;margin-bottom:16px;background:linear-gradient(135deg,var(--pink),var(--cyan));box-shadow:0 10px 24px rgba(255,0,153,.3)}
+.s-card h3{font-size:17px;margin-bottom:8px}
+.s-card p{font-size:13.5px;color:var(--muted)}
+.more-services{display:flex;align-items:center;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:32px}
+.more-label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:800}
+.more-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.services-note{text-align:center;font-size:12.5px;color:var(--muted);max-width:520px;margin:18px auto 0}
 
+/* ---------- skills ---------- */
+.skills-wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:860px;margin:0 auto}
+.skill-group{padding:22px 24px;border-radius:18px;background:var(--glass);border:1px solid var(--glass-border)}
+.skill-group h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;font-weight:800}
+.skill-pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--glass-border);font-size:12.5px;font-weight:700;color:var(--ink)}
+
+/* ---------- portfolio ---------- */
+.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.p-card{position:relative;display:block;border-radius:20px;overflow:hidden;border:1px solid var(--glass-border);aspect-ratio:4/5;transform-style:preserve-3d;transition:transform .3s ease,box-shadow .3s ease}
+.p-card:hover{box-shadow:0 26px 60px rgba(0,0,0,.5),0 0 26px rgba(255,0,153,.14)}
+.p-card img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s ease,filter .6s ease;filter:saturate(.25) brightness(.5) blur(2px)}
+.p-card:hover img{transform:scale(1.08);filter:saturate(.9) brightness(.8) blur(0)}
+.p-fog{position:absolute;inset:0;pointer-events:none;opacity:1;transition:opacity .6s ease;
+  background:
+    radial-gradient(120% 90% at 15% 0%,rgba(255,0,153,.3),transparent 55%),
+    linear-gradient(180deg,rgba(6,4,14,.4),rgba(6,4,14,.8) 70%)}
+.p-card:hover .p-fog{opacity:.28}
+.p-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;background:linear-gradient(180deg,transparent 50%,rgba(4,3,10,.88));transition:.3s}
+.p-overlay>span{font-weight:800;font-size:14px;letter-spacing:.01em}
+.p-roles{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.p-roles .rtag{font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:var(--ink)}
+.p-overlay small{display:block;margin-top:8px;font-size:11px;line-height:1.4;color:var(--muted);font-weight:600;letter-spacing:.01em;opacity:0;transform:translateY(4px);transition:.3s}
+.p-card:hover .p-overlay small{opacity:1;transform:translateY(0)}
+
+/* ---------- process ---------- */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.p-step{padding:26px 20px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-border);text-align:center}
+.p-step .num{width:38px;height:38px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font-weight:900;background:linear-gradient(135deg,var(--cyan),var(--lime));color:#04030a}
+.p-step h4{font-size:15px;margin-bottom:6px}
+.p-step p{font-size:12.5px;color:var(--muted)}
+
+/* ---------- final cta ---------- */
+.final-cta{position:relative;padding:70px 6vw;margin:0 6vw;border-radius:32px;overflow:hidden;text-align:center;
+  background:linear-gradient(135deg,rgba(255,0,153,.14),rgba(138,43,226,.10));border:1px solid var(--glass-border)}
+.final-cta h2{font-family:Georgia,serif;font-size:clamp(26px,3.4vw,38px);margin-bottom:14px}
+.final-cta p{color:var(--muted);max-width:520px;margin:0 auto 28px}
+
+/* ---------- footer ---------- */
+.site-footer{padding:40px 6vw;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid rgba(255,255,255,.08);margin-top:60px}
+
+.nav-toggle{display:none;background:none;border:none;color:var(--ink);font-size:22px;line-height:1;cursor:pointer;padding:6px 4px}
+@media(max-width:980px){
+  .hero{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-toggle{display:block}
+  .nav-links{position:fixed;top:64px;left:0;right:0;z-index:49;flex-direction:column;align-items:flex-start;
+    gap:4px;background:rgba(9,7,31,.98);border-bottom:1px solid rgba(255,255,255,.08);padding:10px 6vw 20px;
+    max-height:0;overflow:hidden;opacity:0;transition:max-height .3s ease,opacity .25s ease}
+  .nav-links.open{max-height:320px;opacity:1}
+  .nav-links li{width:100%}
+  .nav-links a{display:block;padding:12px 0;font-size:16px;border-bottom:1px solid rgba(255,255,255,.06)}
+}
+@media(max-width:560px){
+  .services-grid{grid-template-columns:1fr}
+  .portfolio-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr}
+  .skills-wrap{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .site-header{padding:.7rem 4vw}
+  .studio-name{display:none}
+  .main-nav{gap:8px}
+  .cta-mini{padding:8px 13px;font-size:12px}
+}
+</style>
 </head>
+<body>
+  <div class="bg-glow"></div>
+  <canvas id="particles"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
 
-<body class="dark-theme">
-  <div class="background-glow"></div>
   <header class="site-header">
-    <div class="logo-area glow-logo">
-      <img src="assets/logo/logo.png" alt="VS LiteCode Studio logotyp" class="logo-img" />
+    <div class="logo-area">
+      <img src="assets/logo/logo.png" alt="VS LiteCode Studio" class="logo-img" />
       <span class="studio-name">VS LITECODE STUDIO</span>
     </div>
-
     <nav class="main-nav">
-      <button class="nav-toggle" id="nav-toggle" aria-label="Öppna meny">☰</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
-        <li><a href="services.html" data-i18n="nav.services">Tjänster</a></li>
-        <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
-        <li><a href="about.html" data-i18n="nav.about">Om mig</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
-
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Tjänster</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Kompetens</a></li>
+        <li><a href="#process">Arbetsprocess</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
-
-      <div class="header-actions">
-        <button id="theme-toggle" class="icon-btn" aria-label="Byt tema">🌙</button>
-        <button id="lang-toggle" class="icon-btn" aria-label="Byt språk">SV</button>
-      </div>
+      <a href="#kontakt" class="cta-mini">Berätta om ditt projekt</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Öppna meny" aria-expanded="false">☰</button>
     </nav>
-
   </header>
 
-
-
-  <main class="hero-wrapper">
+  <main class="wrap">
     <section class="hero">
       <div class="hero-text">
-        <p class="hero-tag" data-i18n="hero.tag">
-          Webbutvecklare · HTML · CSS · JS · .NET · Stockholm, Sverige
-        </p>
-
-        <h1 class="hero-title" data-i18n="hero.title">
-          Välkommen till VS LiteCode Studio!
-        </h1>
-
-        <p class="hero-subtitle" data-i18n="hero.subtitle">
-          Jag skapar moderna, responsiva och visuellt starka webbplatser som är både snygga och enkla att
-          använda.
-          Behöver du en professionell webbnärvaro? online CV, portfolio, fotoalbum, företagshemsida eller ett
-          digitalt visitkort med QR-kod? Du har kommit rätt!
-          Mitt fokus är att ge privatpersoner och småföretag en stark digital närvaro med design som känns
-          modern, levande och lite magiskt skräddarsydda webbplatser som speglar deras unika identitet och
-          mål.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="services.html" class="btn btn-primary" data-i18n="hero.btnServices">
-            Se mina tjänster
-          </a>
-          <a href="portfolio.html" class="btn btn-ghost" data-i18n="hero.btnProjects">
-            Visa projekt
-          </a>
+        <span class="hero-tag">Fullstack Webbutvecklare · .NET · React · SQL · Stockholm</span>
+        <h1 id="heroTitle">Webbplatser och <span class="grad">webbappar</span> för ditt företag.</h1>
+        <p class="lead">Jag hjälper småföretag från första idé till färdig webbplats — med genomtänkt design, stabil teknik och personlig kontakt.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">Berätta om ditt projekt</a>
+          <a href="#portfolio" class="btn btn-ghost">Se utvalda projekt</a>
+        </div>
+        <div class="trust-row">
+          <span class="trust-item">Hjälp med hosting & driftsättning</span>
+          <span class="trust-item">Backend, databaser & API vid behov</span>
+          <span class="trust-item">Personlig kontakt hela vägen</span>
         </div>
       </div>
-
-      <div class="hero-photo-frame">
+      <div class="hero-photo-wrap" id="tiltCard">
         <div class="neon-frame">
-          <img src="assets/images/vita-profile.png" alt="Vitalia Sivakova" class="hero-photo" />
+          <img src="assets/images/vita-profile.png" alt="Vitaliia Sivakova" />
         </div>
         <div class="hero-caption">
-          <h2 class="hero-name">Vitaliia Sivakova</h2>
-          <p class="hero-role" data-i18n="hero.role">
-            Webbutvecklare .NET · Grundare av VS LiteCode Studio
-          </p>
+          <h2>Vitaliia Sivakova</h2>
+          <p>Webbutvecklare .NET · Grundare av VS LiteCode Studio</p>
         </div>
+        <div class="floating-badge">✦ Design med känsla</div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-head reveal">
+        <span class="eyebrow">Tjänster</span>
+        <h2>Allt du behöver för en stark digital närvaro</h2>
+        <p class="desc">Från första idé till drift — ett brett spektrum av tjänster, eller en skräddarsydd lösning om du har egna idéer.</p>
+      </div>
+      <div class="services-grid">
+        <article class="s-card reveal tilt"><div class="s-icon">🌐</div><h3>Webbplatser för företag</h3><p>Från enkel hemsida till landningssida — tydlig struktur, snabb laddning, byggd för att konvertera besökare till kunder.</p></article>
+        <article class="s-card reveal tilt"><div class="s-icon">⚙️</div><h3>Webbapplikationer</h3><p>Skräddarsydda fullstack-lösningar med C# / ASP.NET Core & SQL — för inloggning, kunddata eller egen affärslogik.</p></article>
+        <article class="s-card reveal tilt"><div class="s-icon">📅</div><h3>Bokningssystem</h3><p>Tidsbokning online för frisörer, coacher och kliniker — kunder bokar själva, du slipper krångel med telefon och kalender.</p></article>
+        <article class="s-card reveal tilt"><div class="s-icon">🤖</div><h3>Processautomatisering</h3><p>Automatisera repetitiva arbetsuppgifter med UiPath (RPA) — för företag som vill spara tid på manuellt admin-arbete.</p></article>
+      </div>
+      <div class="more-services reveal">
+        <span class="more-label">Fler tjänster</span>
+        <div class="more-pills">
+          <span class="pill">Online-CV</span>
+          <span class="pill">Digitalt visitkort + QR</span>
+          <span class="pill">Portfolio / projektsida</span>
+          <span class="pill">Magiskt fotoalbum</span>
+        </div>
+      </div>
+      <p class="services-note reveal">Hjälp med hosting & driftsättning ingår vid lansering — exakta villkor och eventuella löpande kostnader bestäms vid beställning.</p>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="section-head reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2>Ett urval av projekt</h2>
+        <p class="desc">Riktiga sajter och applikationer, byggda för riktiga kunder och egna projekt. Klicka på ett kort för uppdrag, roll och lösning.</p>
+      </div>
+      <div class="portfolio-grid">
+        <a class="p-card reveal tilt" href="portfolio.html#true-sweden"><img src="assets/images/project-truesweden.svg" alt="True Sweden – e-handel med AI-provning"/><div class="p-fog"></div><div class="p-overlay"><span>True Sweden</span><div class="p-roles"><span class="rtag">Fullstack</span><span class="rtag">AI-provning</span><span class="rtag">Stripe</span></div><small>E-handel med AI-baserad klädprovning · Se projektet →</small></div></a>
+        <a class="p-card reveal tilt" href="portfolio.html#staffflow"><img src="assets/images/project-staffflow.svg" alt="StaffFlow – HR-plattform för lager och logistik"/><div class="p-fog"></div><div class="p-overlay"><span>StaffFlow</span><div class="p-roles"><span class="rtag">Backend</span><span class="rtag">Frontend</span><span class="rtag">DevOps</span></div><small>HR-webbapplikation för skift & lagerpersonal · Se projektet →</small></div></a>
+        <a class="p-card reveal tilt" href="portfolio.html#familjealbum"><img src="assets/images/project-album.png" alt="Fotoalbum projekt"/><div class="p-fog"></div><div class="p-overlay"><span>Familjealbum</span><small>Se projektet →</small></div></a>
+        <a class="p-card reveal tilt" href="portfolio.html#landningssida"><img src="assets/images/project-boxing.png" alt="Landningssida projekt"/><div class="p-fog"></div><div class="p-overlay"><span>Landningssida</span><small>Se projektet →</small></div></a>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="eyebrow">Kompetens</span>
+        <h2>Teknisk stack</h2>
+      </div>
+      <div class="skills-wrap reveal">
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <div class="skill-pills">
+            <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span>
+            <span class="pill">TypeScript</span><span class="pill">React</span><span class="pill">Angular</span>
+            <span class="pill">Responsiv design</span><span class="pill">Tillgänglighet (a11y)</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Backend & data</h4>
+          <div class="skill-pills">
+            <span class="pill">C#</span><span class="pill">ASP.NET Core</span><span class="pill">Python</span>
+            <span class="pill">SQL</span><span class="pill">REST API</span><span class="pill">Microservices</span>
+            <span class="pill">Systemarkitektur</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Verktyg & DevOps</h4>
+          <div class="skill-pills">
+            <span class="pill">Docker</span><span class="pill">Git / GitHub</span><span class="pill">CI/CD</span>
+            <span class="pill">Linux</span><span class="pill">Jira</span><span class="pill">Agile / Scrum</span>
+            <span class="pill">DevOps</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>AI, moln & automatisering</h4>
+          <div class="skill-pills">
+            <span class="pill">Azure</span><span class="pill">Molnplattformar</span><span class="pill">Maskininlärning</span>
+            <span class="pill">RPA / UiPath</span><span class="pill">Excel</span><span class="pill">Power BI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="section-head reveal">
+        <span class="eyebrow">Arbetsprocess</span>
+        <h2>Från idé till publicerad sajt</h2>
+        <p class="desc">Enkel process, tydlig kommunikation hela vägen.</p>
+      </div>
+      <div class="process-grid">
+        <div class="p-step reveal"><div class="num">1</div><h4>Vi pratar om din idé</h4><p>Vad behöver du, vem är målgruppen, vilken stil känns rätt.</p></div>
+        <div class="p-step reveal"><div class="num">2</div><h4>Design & struktur</h4><p>Jag skapar layout och innehåll anpassat efter din identitet.</p></div>
+        <div class="p-step reveal"><div class="num">3</div><h4>Du ser & godkänner</h4><p>Du får se förslaget och ge feedback innan något är låst.</p></div>
+        <div class="p-step reveal"><div class="num">4</div><h4>Publicering</h4><p>Sajten publiceras och du får länken — redo att delas.</p></div>
+      </div>
+    </section>
+
+    <section class="final-cta reveal" id="kontakt">
+      <h2>Redo att starta ditt projekt?</h2>
+      <p>Skicka ett meddelande så återkommer jag med förslag och pris — vanligtvis inom ett par dagar.</p>
+      <div class="cta-actions">
+        <a href="mailto:bondarenkovita35@gmail.com" class="btn btn-primary">✉ bondarenkovita35@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vitaliiа-sivakova-865471187/" target="_blank" rel="noopener" class="btn btn-ghost">in LinkedIn</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>© 2025 VS LiteCode Studio · Vitaliia Sivakova · Stockholm, Sverige</span>
+    <span>© 2026 VS LiteCode Studio · Vitaliia Sivakova · Stockholm, Sverige</span>
   </footer>
 
-  <script src="menu.js"></script>
-  <script src="main.js"></script>
-  <script src="lc-motion.js"></script>
-  <script src="menu.js"></script>
-  <script src="main.js"></script>
-  <script src="lc-motion.js"></script>
-  <script src="translat.exampel.js"></script>
-</body>
+  <script>
+    // drifting constellation particles (persistent, full-page canvas)
+    (function () {
+      const canvas = document.getElementById('particles');
+      const ctx = canvas.getContext('2d');
+      const colors = ['rgba(255,0,153,', 'rgba(255,255,255,'];
+      let w, h, particles;
+      const DENSITY = 32000; // px^2 per particle
 
+      function resize() {
+        w = canvas.width = innerWidth;
+        h = canvas.height = innerHeight;
+        const count = Math.round((w * h) / DENSITY);
+        particles = Array.from({ length: count }, () => ({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          size: 2 + Math.random() * 2.4,
+          vx: (Math.random() - 0.5) * 0.12,
+          vy: (Math.random() - 0.5) * 0.12,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          phase: Math.random() * Math.PI * 2,
+          speed: 0.6 + Math.random() * 0.8
+        }));
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      function drawCross(p, alpha) {
+        ctx.strokeStyle = p.color + alpha + ')';
+        ctx.lineWidth = 1.1;
+        ctx.beginPath();
+        ctx.moveTo(p.x - p.size, p.y);
+        ctx.lineTo(p.x + p.size, p.y);
+        ctx.moveTo(p.x, p.y - p.size);
+        ctx.lineTo(p.x, p.y + p.size);
+        ctx.stroke();
+      }
+
+      // hover-to-connect: stars near the mouse link up to each other,
+      // following the cursor continuously (matches the reference exactly)
+      const CONNECT_RADIUS = 150;
+      let mouse = null; // {x, y}
+      window.addEventListener('mousemove', (e) => { mouse = { x: e.clientX, y: e.clientY }; });
+      window.addEventListener('mouseleave', () => { mouse = null; });
+      window.addEventListener('touchmove', (e) => {
+        if (e.touches[0]) mouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      }, { passive: true });
+
+      const cursorRing = document.createElement('div');
+      cursorRing.style.cssText = 'position:fixed;width:34px;height:34px;border:1.5px solid rgba(255,0,153,.75);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:opacity .2s;opacity:0;box-shadow:0 0 12px rgba(255,0,153,.35)';
+      cursorRing.innerHTML = '<span style="position:absolute;left:50%;top:50%;width:5px;height:5px;background:#fff;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 6px rgba(255,255,255,.7)"></span>';
+      document.body.appendChild(cursorRing);
+
+      function drawLinks() {
+        if (!mouse) { cursorRing.style.opacity = '0'; return; }
+        cursorRing.style.opacity = '1';
+        cursorRing.style.left = mouse.x + 'px';
+        cursorRing.style.top = mouse.y + 'px';
+        const near = particles.filter(p => {
+          const dx = p.x - mouse.x, dy = p.y - mouse.y;
+          return dx * dx + dy * dy < CONNECT_RADIUS * CONNECT_RADIUS;
+        });
+        for (let i = 0; i < near.length; i++) {
+          for (let j = i + 1; j < near.length; j++) {
+            const a = near[i], b = near[j];
+            const dx = a.x - b.x, dy = a.y - b.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist > CONNECT_RADIUS) continue;
+            const alpha = (1 - dist / CONNECT_RADIUS) * 0.5;
+            ctx.strokeStyle = 'rgba(255,255,255,' + alpha + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+          const dx = near[i].x - mouse.x, dy = near[i].y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          const alpha = (1 - dist / CONNECT_RADIUS) * 0.6;
+          ctx.strokeStyle = 'rgba(255,255,255,' + alpha + ')';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(near[i].x, near[i].y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.stroke();
+        }
+      }
+
+      let t = 0;
+      function tick(now) {
+        t += 0.016;
+        ctx.clearRect(0, 0, w, h);
+        for (const p of particles) {
+          p.x += p.vx; p.y += p.vy;
+          if (p.x < -10) p.x = w + 10; if (p.x > w + 10) p.x = -10;
+          if (p.y < -10) p.y = h + 10; if (p.y > h + 10) p.y = -10;
+          const alpha = 0.18 + 0.2 * Math.sin(t * p.speed + p.phase);
+          drawCross(p, Math.max(0.05, alpha));
+        }
+        drawLinks(now || performance.now());
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    })();
+
+    // mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.textContent = open ? '✕' : '☰';
+    });
+    navLinks.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.textContent = '☰';
+      }
+    });
+
+    // scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // 3D tilt on hero photo + cards
+    function attachTilt(el, strength) {
+      el.addEventListener('mousemove', (e) => {
+        const r = el.getBoundingClientRect();
+        const x = e.clientX - r.left, y = e.clientY - r.top;
+        const rx = ((y / r.height) - .5) * -strength;
+        const ry = ((x / r.width) - .5) * strength;
+        el.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-4px)`;
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+    }
+    attachTilt(document.getElementById('tiltCard'), 10);
+    document.querySelectorAll('.tilt').forEach(el => attachTilt(el, 7));
+  </script>
+</body>
 </html>
